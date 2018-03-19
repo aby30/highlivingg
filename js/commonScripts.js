@@ -229,21 +229,21 @@ $(document).ready(function() {
 
       /* get the action attribute from the <form action=""> element */
       var $form = $( this ),
-      url = 'http://website.codehive.in/site/save-contact-data';
+      url = '';
 
       /* Send the data using post with element id name and name2*/
-      var posting = $.post( url, { name: $('input[name=name]').val(), email: $('input[name=email]').val(), mobile: $('input[name=mobile]').val(), message: $('textarea[name=message]').val() } );
+      // var posting = $.post( url, { name: $('input[name=name]').val(), email: $('input[name=email]').val(), mobile: $('input[name=mobile]').val(), message: $('textarea[name=message]').val() } );
 
 
-      posting.then(function( data ) {
-        alert(data);
-      }), function(error) {
-        if (error.status == 422) {
-
-        } else if (error.status == 401) {
-
-        }
-      };
+      // posting.then(function( data ) {
+      //   alert(data);
+      // }), function(error) {
+      //   if (error.status == 422) {
+      //
+      //   } else if (error.status == 401) {
+      //
+      //   }
+      // };
     });
 
 
