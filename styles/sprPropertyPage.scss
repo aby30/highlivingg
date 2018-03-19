@@ -80,6 +80,9 @@ body {
   &__propertyDetailsStripListWrap {
     min-height: 59px;
     margin: 0 0 1%;
+    @media(max-width: 640px) {
+      display: none;
+    }
   }
   &__propertyDetailsStripList {
     background-color: #003E21;
@@ -92,9 +95,6 @@ body {
       left: 30px;
       width: 95.8%;
       z-index: 99;
-    }
-    @media(max-width: 640px) {
-      display: none;
     }
   }
   &__propertyDetailsList {
