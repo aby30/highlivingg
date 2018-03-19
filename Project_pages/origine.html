@@ -1,0 +1,519 @@
+
+<html>
+  <head>
+    <title>Origine</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="../styles/sprPropertyPage.css"/>
+    <link rel="stylesheet" href="../styles/headerFooter.css"/>
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
+    <script type="text/javascript" src="../js/commonScripts.js"></script>
+    <script type="text/javascript" src="../js/carouselsInit.js"></script>
+    <style>
+      .spr__headerInner {
+        background-color: #003E21;
+      }
+      .spr__headerIconWrapInner {
+        background: #00351C;
+      }
+      .spr__menuMobWrap {
+        background-color: #003E21;
+      }
+      .mobMenuSeperator {
+        background-color: #234a2c;
+      }
+      .spr__headerMobMenuCollapseList {
+        background-color: #01331c;
+      }
+    </style>
+    <script>
+      $(document).ready(function(){
+        $(".spr__propertyDetailsList > li > a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+
+    </script>
+    <script type="text/javascript">
+      function showSprOnMap() {
+        //- var mapProp= {
+        //-     center:new google.maps.LatLng(13.102322, 80.252474),
+        //-     zoom:15,
+        //- };
+        //- var map=new google.maps.Map(document.getElementById("SprOnMap"),mapProp);
+
+        var myCenter = new google.maps.LatLng(13.10005445, 80.25665581);
+        var mapCanvas = document.getElementById("propertyOnMap");
+        var mapOptions = {center: myCenter, zoom: 15};
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({position:myCenter, icon: '../images/markerSPR_generic.png'});
+        marker.setMap(map);
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Vy93QoP2Dhof9JiX6ygj-fW_YovzVQ8&amp;callback=showSprOnMap" async="async"></script>
+  </head>
+  <body>
+    <a href="javascript:" id="return-to-top" onclick="scrollToTop();"><img src="../images/upArrow.svg" alt="upArrow"></a>
+    <!--header Inculde-->
+    <div class="spr__headerMain">
+      <div class="spr__headerInner">
+        <label class="spr__mobGalleryBack" for="propertyGalleryMobTrig" onclick="checkMobGallery()" id="mobGalleryBack">
+          <div class="spr__mobGalleryBackInner"><span class="icon-bar"></span><span class="icon-bar"></span></div>
+        </label>
+        <ul class="spr__headerLinksList">
+          <li class="spr__headerLink"><a href="../index.html">Projects</a></li>
+          <li class="spr__headerLink"><a>blog</a></li>
+        </ul>
+        <input class="mobMenuCheck" type="checkbox" id="mobMenuOpen"/>
+        <div class="spr__headerIconWrap">
+          <div class="spr__headerIconWrapInner"><img class="img-responsive non-landing-pages" src="../images/SPRlogo.png"/></div>
+        </div>
+        <ul class="spr__headerLinksList">
+          <li class="spr__headerLink"><a href="/about">about</a></li>
+          <li class="spr__headerLink"><a href="/sovereign">Sovereign</a></li>
+        </ul>
+        <label class="spr__menuMobTrig" for="mobMenuOpen" onclick="checkMobMenu()">
+          <div class="spr__menuMobTrigInner"><span class="icon-bar chlorophyll"></span><span class="icon-bar chlorophyll"></span><span class="icon-bar chlorophyll"></span></div>
+        </label>
+        <div class="spr__menuMobWrap">
+          <div class="spr__menuMobInner">
+            <ul class="spr__menuMobList">
+              <li><a href="/about">About</a>
+                <hr class="mobMenuSeperator"/>
+              </li>
+              <li>
+                <label for="mobMenuContent1">Projects</label>
+                <input type="checkbox" id="mobMenuContent1"/>
+                <div class="spr__headerMobMenuCollapse">
+                  <ul class="spr__headerMobMenuCollapseList">
+                    <li><a href="/projects/osian-chlorophyll">Osian Chlorophyll</a></li>
+                    <li><a href="/projects/codename-city">Codename City</a></li>
+                    <li><a href="">Origine</a>
+                      <!-- <div class="sidebarProjectMarker">coming soon</div> -->
+                    </li>
+                    <li><a href="">Osian Heights</a>
+                      <!-- <div class="sidebarProjectMarker">coming soon</div> -->
+                    </li>
+                    <li><a href="">Osian One</a>
+                      <!-- <div class="sidebarProjectMarker">coming soon</div> -->
+                    </li>
+                    <li><a href="">Market of India</a>
+                      <!-- <div class="sidebarProjectMarker">coming soon</div> -->
+                    </li>
+                  </ul>
+                </div>
+                <hr class="mobMenuSeperator"/>
+              </li>
+              <li><a href="">Blog</a>
+                <hr class="mobMenuSeperator"/>
+              </li>
+              <li><a href="/sovereign">Sovereign</a>
+                <hr class="mobMenuSeperator"/>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spr__propertyMain">
+      <div class="spr__propertyInner">
+        <div class="spr__propertyBanner origine">
+          <div class="spr__propertyBannerText">
+            <div class="spr__propertyBannerTitle">ORIGINE</div>
+            <div class="spr__propertyBannerSubTitle">A place to truly call HOME</div>
+          </div>
+        </div>
+        <div class="spr__propertyDetailsStripListWrap">
+          <div class="spr__propertyDetailsStripList">
+            <ul class="spr__propertyDetailsList">
+              <li><a href="#propertyAboutKeyPts">about</a></li>
+              <li><a href="#propertyAmenities">amenities</a></li>
+              <li><a href="" onclick="event.preventDefault();">price & plan</a>
+                <div class="soonMaker">coming soon</div>
+              </li>
+              <li><a href="#propertyGallery">gallery</a></li>
+              <li><a href="#propertyLoctnMap">location</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="spr__propertyAbout">
+          <div class="spr__propertyAboutInner">
+            <label class="spr__mobileLabelPropertyKeyPts" for="propertyAboutKeyPtsCB">About</label>
+            <input type="checkbox" id="propertyAboutKeyPtsCB"/>
+            <div class="spr__propertyAboutKeyDesc">
+              <div class="spr__propertyAboutKeyPts" id="propertyAboutKeyPts"><span class="spr__propertyKeyPt">
+                  <div class="spr__propertyKeyPtTitle">Location</div>
+                  <div class="spr__propertyKeyPtDesc">Perambur
+                  <div class="spr__propertyKeyPtOther">Chennai</div></div>
+                  </span><span class="spr__propertyKeyPt">
+                  <div class="spr__propertyKeyPtTitle">Development Area</div>
+                  <div class="spr__propertyKeyPtDesc">5.5
+                    <div class="spr__propertyKeyPtOther">Acres</div>
+                  </div></span><span class="spr__propertyKeyPt">
+                  <div class="spr__propertyKeyPtTitle">Towers</div>
+                  <div class="spr__propertyKeyPtDesc">11</div></span><span class="spr__propertyKeyPt">
+                  <div class="spr__propertyKeyPtTitle">Floor</div>
+                  <div class="spr__propertyKeyPtDesc">G + 3
+                    <div class="spr__propertyKeyPtOther">Floors</div>
+                  </div></span><span class="spr__propertyKeyPt">
+                  <div class="spr__propertyKeyPtTitle">Total Units</div>
+                  <div class="spr__propertyKeyPtDesc">85
+                    <div class="spr__propertyKeyPtOther">units</div>
+                  </div></span><span class="spr__propertyKeyPt">
+                  <div class="spr__propertyKeyPtTitle">Apartment Variations</div>
+                  <div class="spr__propertyKeyPtDesc">
+                    <div class="spr__propertyKeyPtOther" style="font-size: 20px;margin-top: -10px;padding: 0px;font-weight: 600;">3 / 4 / 5 BHK</div>
+                  </div></span></div>
+              <div class="spr__propertyAboutDesc">
+                <div class="spr__propertyAboutDescTitle">About the Project</div>
+                <div class="spr__propertyAboutDescDetails">
+                  <p>There is so much beauty around us. Yet look inside and you will find much more. It is breath taking and full of life. Like the sunflower, even its stem, under a microscope radiates beauty. We at SPR Highliving seek to magnify life. Presenting ORIGINE bespoke bungalows. Made with microscopic attention to detail. Every tree, every corner of your living space 	has been fussed over. So you experience life to its fullest potential. In the following pages, we are privileged to introduce you to origine.  And  the beauty of things around us, that make up life.<br /><br />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <label class="spr__mobileLabelPropertyKeyPts" for="propertyAmenitiesMob">Amenities</label>
+            <input type="checkbox" id="propertyAmenitiesMob"/>
+            <div class="spr__propertyAmenities" id="propertyAmenitiesMobStr"><span class="spr__propertyAmenityWrap">
+                <div class="spr__propertyAmenity">
+                  <div class="spr__propertyAmenityName">Cafe</div>
+                </div></span><span class="spr__propertyAmenityWrap">
+                <div class="spr__propertyAmenity">
+                  <div class="spr__propertyAmenityName">Gym</div>
+                </div></span><span class="spr__propertyAmenityWrap">
+                <div class="spr__propertyAmenity">
+                  <div class="spr__propertyAmenityName">Kid's Play Area</div>
+                </div></span><span class="spr__propertyAmenityWrap">
+                <div class="spr__propertyAmenity">
+                  <div class="spr__propertyAmenityName">Swimming Pool</div>
+                </div></span>
+                <!-- <span class="spr__propertyAmenityWrap">
+                  <div class="spr__propertyAmenity">
+                    <label class="spr__propertyAmenityName" for="moreAminitiesMob">24 More Amenities</label>
+                  </div>
+                </span> -->
+              <!-- <input class="moreAminitiesCbox" type="checkbox" id="moreAminitiesMob"/>
+              <div class="spr__propertyMoreAmenityWrap">
+                <div class="spr__propertyMoreAmenityInner"><span class="spr__propertyAmenityWrap">
+                    <div class="spr__propertyAmenity">
+                      <div class="spr__propertyAmenityName">Spa</div>
+                    </div></span><span class="spr__propertyAmenityWrap">
+                    <div class="spr__propertyAmenity">
+                      <div class="spr__propertyAmenityName">Gym</div>
+                    </div></span><span class="spr__propertyAmenityWrap">
+                    <div class="spr__propertyAmenity">
+                      <div class="spr__propertyAmenityName">Meditation Zone</div>
+                    </div></span><span class="spr__propertyAmenityWrap">
+                    <div class="spr__propertyAmenity">
+                      <div class="spr__propertyAmenityName">Gym</div>
+                    </div></span><span class="spr__propertyAmenityWrap">
+                    <div class="spr__propertyAmenity">
+                      <div class="spr__propertyAmenityName">Meditation Zone</div>
+                    </div></span></div>
+              </div> -->
+            </div>
+            <div class="spr__propertyAmenities" id="propertyAmenities">
+
+                <span class="spr__propertyAmenityWrap">
+                    <div class="spr__propertyAmenity" style="background-image: url('../images/projects/origine/web/amenities/coffee_cup.jpg')">
+                        <div class="spr__propertyAmenityName">Cafe</div>
+                    </div>
+                </span>
+
+                <span class="spr__propertyAmenityWrap">
+                    <div class="spr__propertyAmenity" style="background-image: url('../images/projects/origine/web/amenities/gym.jpg')">
+                        <div class="spr__propertyAmenityName">Gym</div>
+                    </div>
+                </span>
+
+                <span class="spr__propertyAmenityWrap">
+                    <div class="spr__propertyAmenity" style="background-image: url('../images/projects/origine/web/amenities/kid_play.jpg')">
+                        <div class="spr__propertyAmenityName">Kid's Play Area</div>
+                    </div>
+                </span>
+
+                <span class="spr__propertyAmenityWrap">
+                  <div class="spr__propertyAmenity" style="background-image: url('../images/projects/origine/web/amenities/swimming_pool.jpg')">
+                    <div class="spr__propertyAmenityName">Swimming pool</div>
+                  </div>
+                </span>
+                <!-- <span class="spr__propertyAmenityWrap spr__propertyAmenityMore">
+                  <div class="spr__propertyAmenity">
+                    <label class="spr__propertyAmenityName" for="moreAminities">6 More Amenities</label>
+                  </div>
+                </span> -->
+              <!-- <input class="moreAminitiesCbox" type="checkbox" id="moreAminities"/>
+              <div class="spr__propertyMoreAmenityWrap">
+                <div class="spr__propertyMoreAmenityInner">
+
+
+                    <span class="spr__propertyAmenityWrap">
+                    <div class="spr__propertyAmenity" style="background-image: url('../images/projects/chlorophyll/web/Aminities/jaccuzi_mini.jpg')">
+                      <div class="spr__propertyAmenityName">Jacuzzi</div>
+                    </div></span><span class="spr__propertyAmenityWrap">
+                    <div class="spr__propertyAmenity" style="background-image: url('../images/projects/chlorophyll/web/Aminities/jogging%20track_mini.jpg')">
+                      <div class="spr__propertyAmenityName">Jogging track</div>
+                    </div></span><span class="spr__propertyAmenityWrap">
+                    <div class="spr__propertyAmenity" style="background-image: url('../images/projects/chlorophyll/web/Aminities/kids%20play_mini.jpg')">
+                      <div class="spr__propertyAmenityName">Kid's play area</div>
+                    </div></span><span class="spr__propertyAmenityWrap">
+                    <div class="spr__propertyAmenity" style="background-image: url('../images/projects/chlorophyll/web/Aminities/library_mini.jpg')">
+                      <div class="spr__propertyAmenityName">Librarys</div>
+                    </div></span><span class="spr__propertyAmenityWrap">
+                    <div class="spr__propertyAmenity" style="background-image: url('../images/projects/chlorophyll/web/Aminities/meditaion_mini.jpg')">
+                      <div class="spr__propertyAmenityName">Meditation room</div>
+                    </div></span><span class="spr__propertyAmenityWrap">
+                    <div class="spr__propertyAmenity" style="background-image: url('../images/projects/chlorophyll/web/Aminities/spa_mini.jpg')">
+                      <div class="spr__propertyAmenityName">Spa</div>
+                    </div></span></div>
+              </div> -->
+            </div>
+            <!-- <label class="spr__mobileLabelPropertyKeyPts" for="propertyPlanPriceMobLabel">plan & price</label> -->
+            <input type="checkbox" id="propertyPlanPriceMobLabel"/>
+            <div class="spr__propertyPricePlan" id="propertyPricePlan" style="display: none">
+              <div class="spr__propertyPricePlanListWrap">
+                <ul class="spr__propertyPricePlanList">
+                  <li data-slide="1">1 BHK</li>
+                  <li data-slide="2">2 BHK</li>
+                  <li data-slide="3">3 BHK</li>
+                  <li data-slide="4">Duplex</li>
+                  <li data-slide="5">Penthouse</li>
+                </ul>
+              </div>
+              <div class="spr__propertyPricePlanImgPrice">
+                <div class="spr__propertyPricePlanImg">
+                  <ul class="spr__propertyNameCarouselMob">
+                    <li>1 BHK</li>
+                    <li>2 BHK</li>
+                    <li>3 BHK</li>
+                    <li>Duplex</li>
+                    <li>Penthouse</li>
+                  </ul>
+                  <ul class="spr__propertyPricePlanCarousel">
+                    <li><img src="" title="img" alt="img"/></li>
+                    <li><img src="" title="img2" alt="img2"/></li>
+                    <li><img src="" title="img" alt="img"/></li>
+                    <li><img src="" title="img2" alt="img2"/></li>
+                    <li><img src="" title="img" alt="img"/></li>
+                  </ul>
+                  <ul class="spr__propertyPriceCarousel">
+                    <li>
+                      <div class="spr__propertyPricePricings">Rs. 40,00,000</div>
+                    </li>
+                    <li>
+                      <div class="spr__propertyPricePricings">Rs. 30,00,000</div>
+                    </li>
+                    <li>
+                      <div class="spr__propertyPricePricings">Rs. 140,00,000</div>
+                    </li>
+                    <li>
+                      <div class="spr__propertyPricePricings">Rs. 20,00,000</div>
+                    </li>
+                    <li>
+                      <div class="spr__propertyPricePricings">Rs. 90,00,000</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <label class="spr__mobileLabelPropertyKeyPts" for="propertyGalleryMobLabel">Gallery</label>
+            <input type="checkbox" id="propertyGalleryMobLabel"/>
+            <div class="spr__propertyGallery" id="propertyGallery">
+              <div class="spr__propertyGalleryInner">
+                <div class="spr__propertyGalleryMob">
+                  <div class="spr__propertyGalleryImg"><img class="img-responsive" src="../images/projects/origine/web/gallery/gal_1.jpg"/></div>
+                  <div class="spr__propertyGalleryImg"><img class="img-responsive" src="../images/projects/origine/web/gallery/gal_2.jpg"/></div>
+                  <div class="spr__propertyGalleryMobMore">
+                    <label class="spr__propertyGalleryMobTrig" for="propertyGalleryMobTrig" onclick="checkMobGallery()">View all</label>
+                    <input type="checkbox" id="propertyGalleryMobTrig"/>
+                    <div class="spr__propertyGalleryMobWrap">
+                      <div class="spr__propertyGalleryMobInner">
+                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="../images/projects/origine/web/gallery/gal_3.jpg"/></div>
+                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="../images/projects/origine/web/gallery/gal_4.jpg"/></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="spr__propertyGalleryCarousel">
+                  <ul class="slickslide">
+                    <li><img src="../images/projects/origine/web/gallery/gal_1.jpg" title="img" alt="img"/>
+                      <div class="imageCaption">Gallery 1</div>
+                    </li>
+                    <li><img src="../images/projects/origine/web/gallery/gal_2.jpg" title="img2" alt="img2"/>
+                      <div class="imageCaption">Gallery 2</div>
+                    </li>
+                    <li><img src="../images/projects/origine/web/gallery/gal_3.jpg" title="img" alt="img"/>
+                      <div class="imageCaption">Gallery 3</div>
+                    </li>
+                    <li><img src="../images/projects/origine/web/gallery/gal_4.jpg" title="img" alt="img"/>
+                      <div class="imageCaption">Gallery 4</div>
+                    </li>
+                  </ul>
+                  <ul class="slick-thumbs">
+<!--
+                    <li><img src="https://unsplash.it/160/160?image=112"/></li>
+                    <li><img src="https://unsplash.it/160/160?image=113"/></li>
+-->
+                    <li><img src="../images/projects/origine/web/gallery/gal_1.jpg"/></li>
+                    <li><img src="../images/projects/origine/web/gallery/gal_2.jpg"/></li>
+                    <li><img src="../images/projects/origine/web/gallery/gal_3.jpg"/></li>
+                    <li><img src="../images/projects/origine/web/gallery/gal_4.jpg"/></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <label class="spr__mobileLabelPropertyKeyPts" for="propertyLocationMobLabel">Location</label>
+            <input type="checkbox" id="propertyLocationMobLabel"/>
+            <div class="spr__propertyLoctnMap" id="propertyLoctnMap">
+              <div class="spr__propertyLoctnMapInner">
+                <div id="propertyOnMap"></div>
+              </div>
+            </div>
+            <label class="spr__mobileLabelPropertyKeyPts" for="propertyEnquiryMobLabel">Enquiry</label>
+            <input type="checkbox" id="propertyEnquiryMobLabel"/>
+            <div class="spr__propertyEnquiry">
+              <div class="spr__propertyEnquiryInner">
+                <div class="spr__propertyEnquiryInnerWrap">
+                  <div class="spr__propertyEnquiryTitle">Enquire</div>
+                  <form class="spr__propertyEnquiryForm" action="" method="POST">
+                    <input type="text" placeholder="Name *" name="name" required="required"/>
+                    <input type="text" placeholder="Mobile *" name="mobile" minlength="10" maxlength="10" required="required"/>
+                    <input type="email" placeholder="Email *" name="email" required="required"/>
+                    <div>
+                      <textarea type="text" placeholder="Quick Message *" name="message" required="required"></textarea>
+                    </div>
+                    <div class="spr__propertyEnquiryFormSbmt">
+                      <button type="submit" value="Submit">Send</button>
+                    </div>
+                    <div class="spr__propertyEnquiryFormMsgWrap">
+                      <div class="spr__propertyEnquiryFormMsg">or Call Us on +91 81486 81486</div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer Inculde-->
+    <div class="spr__footerMain">
+      <div class="spr__footerInner">
+        <div class="spr__footerIconWrap">
+          <div class="spr__footerIcon"><img class="img-responsive" src="../images/logoDark.svg"/></div>
+        </div>
+        <div class="spr__footerLinksWrap">
+
+          <div class="spr__footerLinksSet">
+            <label class="spr__footerLinksSetTitle" for="set4">Social Media</label>
+            <input class="spr__footerLinksSetCheckbox" type="checkbox" id="set4"/>
+            <div class="spr__footerLinksSetListWrap">
+              <ul class="spr__footerLinksSetList">
+                <li><a href="https://www.facebook.com/SPRIndia/" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/sprosian" target="_blank">Twitter</a></li>
+                <li><a href="https://plus.google.com/u/0/115967562277429436868" target="_blank">Google</a></li>
+                <li><a href="https://www.youtube.com/channel/UCr1l58eXkXpdIEFOwWdCRhQ" target="_blank">Youtube</a></li>
+                <li><a href="https://www.linkedin.com/company/10446753/" target="_blank">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="spr__footerLinksSet">
+            <label class="spr__footerLinksSetTitle" for="set3">Quick Links</label>
+            <input class="spr__footerLinksSetCheckbox" type="checkbox" id="set3"/>
+            <div class="spr__footerLinksSetListWrap">
+              <ul class="spr__footerLinksSetList">
+                <li><a href="">Careers</a></li>
+                <li><a href="">EMI Calculator</a></li>
+                <li><a href="">Media centre</a></li>
+                <li><a href="" onclick="event.preventDefault();termModalTriggerFunc();">Terms and Conditions</a></li>
+                <li><a href="" onclick="event.preventDefault();sovereignTermModalTrig();">Sovereign Terms</a></li>
+                <li><a href="">Privacy policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="spr__footerLinksSet">
+            <label class="spr__footerLinksSetTitle" for="set2">projects</label>
+            <input class="spr__footerLinksSetCheckbox" type="checkbox" id="set2"/>
+            <div class="spr__footerLinksSetListWrap">
+              <ul class="spr__footerLinksSetList">
+                <li><a href="/projects/osian-chlorophyll">Osian Chlorophyll</a></li>
+                <li><a href="/projects/codename-city">Codename City</a></li>
+                <li><a href="">Market of India</a>
+                  <!-- <div class="soonMaker">coming soon</div> -->
+                </li>
+                <li><a href="">Origine</a>
+                  <!-- <div class="soonMaker">coming soon</div> -->
+                </li>
+                <li><a href="">Osian Heights</a>
+                  <!-- <div class="soonMaker">coming soon</div> -->
+                </li>
+                <li><a href="">Osian One</a>
+                  <!-- <div class="soonMaker">coming soon</div> -->
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="spr__footerLinksSet">
+            <label class="spr__footerLinksSetTitle" for="set1">SPR Highliving</label>
+            <input class="spr__footerLinksSetCheckbox" type="checkbox" id="set1"/>
+            <div class="spr__footerLinksSetListWrap">
+              <ul class="spr__footerLinksSetList">
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/about">About</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div id="footerTermsModal" class="modal fade spr__footerTermsModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            	<p>This disclaimer (“Disclaimer”) will be applicable to the Website. By using or accessing the Website you agree with the Disclaimer without any qualification or limitation SPR Construction Private Limited (“The Company”) reserves the right to add, alter or delete material from the Website at any time and may, at any time, revise these Terms without notifying you. You are bound by any such amendments and the Company therefore advise that you periodically visit this page to review the current Terms.</p>
+            	<p>No information given under this Website creates a warranty or expands the scope of any warranty that cannot be disclaimed under the applicable laws. Your use of the Website is solely at your own risk. This website is for guidance only. It does not constitute part of an offer or contract.</p>
+            	<p>The particulars contained or the details mentioned in respect of the Projects / developments undertaken by the Company including depicting banners/posters of the Project/development. The contents are being modified in terms of the stipulations / recommendations under the Real Estate (Regulation and Development) Act 2016, and Rules made there under (“RERA”) and accordingly may not be fully in line thereof as of date. You are therefore, required to verify all the details, including area, amenities, services, terms of sales, payments and other relevant terms independently with the sales team/ company prior to concluding any decision for buying any unit(s) in any of our projects/developments. Till such time the details are fully updated, the said information will not be construed as an advertisement. To find out more about our projects / developments, please telephone our sales centres or visit our sales office and speak to our sales staff.</p>
+            	<p>In no event will the Company, its management, its associate companies and /or its employees be liable for claim made by the users including seeking any cancellation for any of the inaccuracies in the information provided in this Website, though all efforts have to be made to ensure accuracy. The Company under no circumstances will be liable for any expense, loss or damage including, without limitation, indirect or consequential loss or damage, or any expense, loss or damage whatsoever arising from use, or loss of use, of data, arising out of or in connection with the use of this website.</p>
+            	<p>This website is currently being updated. While enough care is taken by the Company to ensure that information in the website is up to date, accurate and correct, readers are requested to make their independent enquiry before relying upon the same. All content including brochures are purely for general informational purposes only. It is not meant to constitute an offer or solicitation. It is a Visual representation of the project shown on this site. No furniture or accessories shown in any of the visuals are provided with the unit. This website material does not constitute an offer and/or contract of any type between the Developer/Promoter/Owner and the recipient, all intending purchaser/s in any of the projects shall be governed by the terms and conditions envisaged under The Real Estate (Regulation And Development) Act 2016. Nothing on the website should be misconstrued as advertising, marketing, booking, selling or an offer for sale or invitation to purchase a unit in any project by the company/firm. The company/firm is not responsible for the consequences of any action taken by the viewer relying on such material/information on this website.</p>
+            	<p>To find out more about projects/developments, please call +91 81486 81486 or visit our sales office during working hours and get in touch with authorized sales representatives of the Company.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">I Agree</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footerSovereignTermsModal" class="modal fade spr__footerTermsModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            	<p>Here Sovereign term will come</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">I Agree</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

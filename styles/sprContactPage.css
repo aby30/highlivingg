@@ -1,0 +1,182 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  margin: 30px; }
+  @media (max-width: 768px) {
+    body {
+      font-size: 12px;
+      margin: 0px; } }
+
+.spr__contactInner {
+  overflow-x: hidden; }
+
+.spr__contactBannerInner {
+  display: table;
+  width: 100%;
+  height: 35vh;
+  background-image: url(../images/contactUsBanner.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 0 1%; }
+
+.spr__contactBannerTitle {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "Big_Caslon";
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1.8px; }
+  @media (max-width: 640px) {
+    .spr__contactBannerTitle {
+      font-size: 25px; } }
+
+.spr__locationInner {
+  display: table;
+  width: 100%;
+  height: 40vh;
+  margin: 0 0 1%; }
+  @media (max-width: 640px) {
+    .spr__locationInner {
+      display: block;
+      height: auto; } }
+  .spr__locationInner > div {
+    display: table-cell;
+    vertical-align: top; }
+    @media (max-width: 640px) {
+      .spr__locationInner > div {
+        display: block; } }
+  .spr__locationInner > div:first-child {
+    width: 60%;
+    padding: 0 1% 0 0; }
+    @media (max-width: 640px) {
+      .spr__locationInner > div:first-child {
+        width: 100%;
+        margin: 0 0 1% 0;
+        padding: 0; } }
+
+.spr__locationAddrWrap {
+  background-color: #C2B49A; }
+
+.spr__locationAddrInner {
+  color: #003255;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 48px; }
+
+.spr__locationAddr {
+  margin: 0 0 5%; }
+
+.spr__locationAddrTitle {
+  font-weight: 600; }
+
+.spr__propertyEnquiryInner {
+  background-color: rgba(194, 180, 154, 0.3);
+  text-align: center; }
+
+.spr__propertyEnquiryInnerWrap {
+  width: 80%;
+  margin: 0 auto; }
+  @media (max-width: 1300px) {
+    .spr__propertyEnquiryInnerWrap {
+      width: 95%; } }
+  @media (max-width: 640px) {
+    .spr__propertyEnquiryInnerWrap {
+      width: 95%; } }
+
+.spr__propertyEnquiryTitle {
+  color: #525222;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 32px;
+  text-align: center;
+  padding: 44px 0 34px;
+  text-transform: uppercase; }
+  @media (max-width: 640px) {
+    .spr__propertyEnquiryTitle {
+      padding: 25px 0 20px; } }
+
+.spr__propertyEnquiryForm input, .spr__propertyEnquiryForm textarea {
+  width: 31.9%;
+  padding: 10px 15px;
+  margin: 0 0 20px 0;
+  border-radius: 3px;
+  border: none;
+  box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
+  resize: none;
+  font-size: 14px; }
+  @media (max-width: 640px) {
+    .spr__propertyEnquiryForm input, .spr__propertyEnquiryForm textarea {
+      width: 100%;
+      margin: 0 0 10px;
+      box-shadow: none; } }
+  .spr__propertyEnquiryForm input textarea, .spr__propertyEnquiryForm textarea textarea {
+    height: 50px; }
+    @media (max-width: 640px) {
+      .spr__propertyEnquiryForm input textarea, .spr__propertyEnquiryForm textarea textarea {
+        height: 235px; } }
+
+.spr__propertyEnquiryForm > input:nth-child(2) {
+  margin: 0 1.6% 20px 1.7%; }
+  @media (max-width: 1120px) {
+    .spr__propertyEnquiryForm > input:nth-child(2) {
+      margin: 0 1.4% 20px 1.4%; } }
+  @media (max-width: 640px) {
+    .spr__propertyEnquiryForm > input:nth-child(2) {
+      width: 100%;
+      margin: 0 0 10px; } }
+
+.spr__propertyEnquiryForm > div > textarea {
+  height: 46px;
+  width: 100%; }
+  @media (max-width: 640px) {
+    .spr__propertyEnquiryForm > div > textarea {
+      height: 235px; } }
+
+.spr__propertyEnquiryForm button {
+  height: 50px;
+  width: 50%;
+  border-radius: 3px;
+  background-color: #C2B49A;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  color: #525222;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  margin: 0 0 40px;
+  text-transform: uppercase; }
+  @media (max-width: 640px) {
+    .spr__propertyEnquiryForm button {
+      width: 100%;
+      margin: 0; } }
+
+@media (max-width: 640px) {
+  .spr__propertyEnquiryFormSbmt {
+    margin: 0 -10px 0; } }
+
+.spr__propertyEnquiryFormMsgWrap {
+  padding: 0px 0 38px; }
+  @media (max-width: 640px) {
+    .spr__propertyEnquiryFormMsgWrap {
+      margin: 0 -10px 0;
+      padding: 24px 0 38px;
+      background-color: #ffffff; } }
+
+.spr__propertyEnquiryFormMsg {
+  color: #525222;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px; }
+  @media (max-width: 640px) {
+    .spr__propertyEnquiryFormMsg {
+      background-color: #003154;
+      font-size: 18px;
+      padding: 10px 0px;
+      color: #C2B49A; } }
+
+#SprOnMap {
+  width: 100%;
+  height: 100% !important; }

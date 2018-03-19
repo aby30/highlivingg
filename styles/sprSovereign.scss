@@ -1,0 +1,476 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  margin: 30px;
+  @media (max-width: 768px) {
+    font-size: 12px;
+    margin: 0px;
+  }
+}
+
+.spr {
+  &__sovereignMain {
+    overflow-x: hidden;
+  }
+  &__sovereignBanner {
+
+  }
+  &__sovereignBannerInner {
+    display: table;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    padding: 0px 0px;
+    text-align: center;
+    background-image: url(../images/sovereignBanner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0  0 1%;
+    @media(max-width: 640px) {
+      margin: 0  0 1px;
+    }
+  }
+  &__sovereignBannerTitle {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    > img {
+      width: 385px;
+      @media(max-width: 640px) {
+        width: 300px;
+      }
+    }
+  }
+  &__sovereignBannerBtn {
+    // display: table-cell;
+    position: absolute;
+    width: 100%;
+    vertical-align: bottom;
+  }
+
+  &__sovereignNavbarInner {
+    background-color: #32221E;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 1%;
+    display: block;
+    @media(max-width: 640px) {
+      display: none;
+    }
+  }
+  &__sovereignNavbarlist {
+    padding: 0px;
+    list-style-type: none;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 19px;
+    li {
+      display: inline-block;
+      text-transform: uppercase;
+      > a {
+        display: block;
+        color: #C2B49A;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 20px 35px;
+      }
+    }
+  }
+
+  &__sovereignInner {
+    overflow-x: hidden;
+    > div {
+      @media(max-width: 640px) {
+        margin: 0 0 1px;
+      }
+    }
+  }
+
+  &__sovereigCardImg {
+    margin: 0 auto 70px;
+    @media(max-width: 640px) {
+      width: 80%;
+    }
+    > img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__sovereigTagline {
+
+  }
+  &__sovereigTaglineWrap {
+    background-color: rgba(194, 180, 154, 0.3);
+    text-align: center;
+  }
+  &__sovereigTaglineInner {
+    width: 75%;
+    margin: 0 auto 1%;
+    padding: 63px 0px 96px;
+    @media(max-width: 640px) {
+      width: 90%;
+      padding: 40px 0px 67px;
+    }
+  }
+  &__sovereigTaglineTxt {
+    color: #32221E;
+    font-size: 40px;
+    margin: 20px;
+    @media(max-width: 640px) {
+      font-size: 24px;
+      margin: 10px;
+    }
+  }
+  &__sovereigTaglineSub {
+    font-size: 20px;
+    @media(max-width: 640px) {
+      font-size: 18px;
+      margin: 13px 0 0;
+    }
+  }
+
+  &__sovereigHowTo {
+    display: inline-block;
+    width: 45%;
+    margin: 80px 2% 60px;
+    vertical-align: text-top;
+    @media(max-width: 640px) {
+      width: 100%;
+      margin: 25px 0% 20px;
+      &:nth-of-type(4) {
+        margin: 0px 0% 20px;
+      }
+    }
+  }
+  &__sovereigHowToBox {
+    background-color: #ffffff;
+    border: 1px solid #C2B49A;
+    border-radius: 3px;
+  }
+  &__sovereigHowToBoxTitle {
+    background-color: #C2B49A;
+    color: #ffffff;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  &__sovereigHowToBoxAns {
+    padding: 20px 25px;
+    min-height: 130px;
+    color: #32221E;
+    font-size: 14px;
+  }
+
+  &__packagesWrapInner {
+    display: none;
+    @media(max-width: 640px) {
+      white-space: nowrap;
+      overflow: auto;
+      overflow-x: scroll;
+      padding: 0px 17px 24px 0;
+      margin: 0 -18px 0 0;
+    }
+  }
+  &__package {
+    display: inline-block;
+    width: 22%;
+    height: 420px;
+    padding: 10px;
+    background-color: #ffffff;
+    margin: 0 1% 7% 0;
+    -webkit-box-shadow: 1px 46px 119px -75px rgba(0,0,0,1);
+    -moz-box-shadow: 1px 46px 119px -75px rgba(0,0,0,1);
+    box-shadow: 1px 46px 119px -75px rgba(0,0,0,1);
+    @media(max-width: 640px) {
+      width: 221px;
+      white-space: normal;
+    }
+  }
+  &__package:last-child {
+    margin: 0 0 7%;
+  }
+  &__packageName {
+    padding: 25px 10px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 22px;
+    text-transform: uppercase;
+  }
+  &__packageDetails {
+    color: #32221E;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  &__packageInnerSeperator {
+    background-color: #D8D8D8;
+    height: 1px;
+    width: 100%;
+    margin: 10px 0px;
+  }
+
+  &__packageOtherGenrlTerms {
+    color: #32221E;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+
+  &__sovereigUseOfPtsMain {
+    background-color: #C2B49A;
+    margin: 0 0 1%;
+  }
+  &__sovereigUseOfPtsInner {
+    width: 75%;
+    color: #32221E;
+    text-align: center;
+    padding: 50px 20px 75px;
+    margin: 0 auto;
+    @media(max-width: 640px) {
+      width: 85%;
+      padding: 50px 20px 25px;
+    }
+  }
+  &__sovereigUseOfPtsTitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 50px;
+    @media(max-width: 640px) {
+      display: none;
+    }
+  }
+  &__sovereigUseOfPts {
+    display: inline-block;
+    width: 32%;
+    @media(max-width: 640px) {
+      width: 100%;
+      margin: 0 0 70px;
+    }
+  }
+  &__sovereigUseOfPtsIcon {
+    margin: 0 0 40px;
+    > img {
+      width: 60px;
+    }
+  }
+  &__sovereigUseOfPtsTxt {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+
+  &__sovereigFaqInner {
+    text-align: left;
+    color: #32221E;
+    width: 70%;
+    margin: 0 auto 114px;
+    @media(max-width: 640px) {
+      width: 100%;
+      margin: 0 auto 0;
+    }
+  }
+  &__sovereigFaqHeader {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 52px;
+    text-align: center;
+    margin: 60px 0 48px;
+    @media(max-width: 640px) {
+      display: none;
+    }
+  }
+  &__sovereigFaq {
+    padding: 18px 20px;
+    margin: 0 0 10px;
+    background-color: rgba(194, 180, 154, 0.2);
+    @media(max-width: 640px) {
+      margin: 0 0 4px;
+      padding: 18px 25px;
+    }
+    > input:checked + .spr__sovereigFaqAns {
+      max-height: 2000px;
+    }
+  }
+  &__sovereigFaqTitle {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    @media(max-width: 640px) {
+      font-size: 14px;
+    }
+    + input {
+      display: none;
+    }
+  }
+  &__sovereigFaqAns {
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &__sovereigFaqAnsInner {
+    padding: 16px 0 0px;
+    border-top: 1px solid #C2B49A;
+    margin: 10px 0 0;
+  }
+
+  &__mobileLabelPropertyKeyPts {
+    background-color: #32221E;
+    width: 100%;
+    padding: 20px 10px;
+    text-align: center;
+    color: #C2B49A;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: none;
+    @media(max-width: 640px) {
+      display: block;
+    }
+    & + input {
+      display: none;
+    }
+  }
+
+  //Enquiry Box styles START
+
+  &__propertyEnquiry {
+    @media(max-width: 640px) {
+      // overflow: hidden;
+      // max-height: 0px;
+      // transition: all 0.3s ease;
+    }
+  }
+  &__propertyEnquiryInner {
+    background-color: rgba(194, 180, 154, 0.3);
+    padding: 36px 0px;
+    text-align: center;
+    margin: 0 0 1%;
+    @media(max-width: 640px) {
+      padding: 0;
+    }
+  }
+  &__propertyEnquiryInnerWrap {
+    width: 75%;
+    margin: 0 auto;
+    @media(max-width: 640px) {
+      width: 95%;
+    }
+  }
+  &__propertyEnquiryTitle {
+    color: #525222;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 32px;
+    text-align: center;
+    margin: 0 0 34px;
+    text-transform: uppercase;
+    @media(max-width: 640px) {
+      display: none;
+    }
+  }
+  &__propertyEnquiryForm {
+    input, textarea {
+    width: 32.2%;
+    float: left;
+    padding: 13px 15px;
+    margin: 0 0 20px 0;
+    border-radius: 3px;
+    border: none;
+    box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
+    resize: none;
+      @media(max-width: 640px) {
+        width: 100%;
+        margin: 0 0 10px;
+      }
+      textarea {
+        height: 50px;
+        @media(max-width: 640px) {
+          height: 235px;
+        }
+      }
+    }
+    > input:nth-child(2) {
+      margin: 0 1.6% 20px 1.7%;
+      @media(max-width: 640px) {
+        width: 100%;
+        margin: 0 0 10px;
+      }
+    }
+    > div {
+      > textarea {
+        width: 100%;
+      }
+    }
+    button {
+      height: 50px;
+      width: 50%;
+      border-radius: 3px;
+      background-color: #C2B49A;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+      color: #32221E;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 27px;
+      margin: 0 0 40px;
+      text-transform: uppercase;
+      @media(max-width: 640px) {
+        width: 100%;
+        margin: 0 0 10px;
+      }
+    }
+  }
+  &__propertyEnquiryFormMsg {
+  	color: #525222;
+  	font-size: 24px;
+  	font-weight: 600;
+  	line-height: 32px;
+    @media(max-width: 640px) {
+      background-color: #32221E;
+      font-size: 18px;
+      padding: 10px 0px;
+      color: #C2B49A;
+      margin: 0px -10px;
+    }
+  }
+
+  //Enquiry Box styles END
+
+  &__sovereigTaglineWrap, &__sovereigUseOfPtsWrap, &__sovereigFaqInner, &__propertyEnquiryWrap {
+    transition: all 0.3s ease;
+    @media(max-width: 640px) {
+      max-height: 0px;
+      overflow: hidden;
+    }
+  }
+}
+
+#sovereigTagline:checked + .spr__sovereigTaglineWrap, #sovereigUseOfPts:checked + .spr__sovereigUseOfPtsWrap, #sovereigFaq:checked + .spr__sovereigFaqInner, #propertyEnquiry:checked + .spr__propertyEnquiryWrap {
+  max-height: 2000px;
+}
+
+label {
+  margin: 0;
+}
+
+.bronze {
+  background-color: #ad6c45;
+}
+.silver {
+  background-color: #9b9b9b;
+}
+.gold {
+  background-color: #cfa24f;
+}
+.platinum {
+  background-color: #464d62;
+}

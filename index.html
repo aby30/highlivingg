@@ -1,0 +1,469 @@
+
+<html>
+  <head>
+    <title>SPR Listings</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet"/>
+    <!-- <script type="text/javascript" src="js/commonScripts.js"></script> -->
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/carouselsInit.js"></script>
+    <script type="text/javascript" src="js/commonScripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="styles/sprListings.css"/>
+    <link rel="stylesheet" href="styles/headerFooter.css"/>
+  </head>
+  <body>
+    <a href="javascript:" id="return-to-top" onclick="scrollToTop();"><img src="images/upArrow.svg" alt="upArrow"></a>
+    <!--header Inculde-->
+    <div class="spr__headerMain">
+      <div class="spr__headerInner landing-page-wrapper">
+        <ul class="spr__headerLinksList">
+          <li class="spr__headerLink"><a class="landing_page" href="/">Projects</a></li>
+          <li class="spr__headerLink"><a class="landing_page">blog</a></li>
+        </ul>
+        <input class="mobMenuCheck" type="checkbox" id="mobMenuOpen"/>
+        <div class="spr__headerIconWrap">
+          <div class="spr__headerIconWrapInner landing-logo-wrapper" onclick="location.href='/'"><img class="img-responsive" src="images/SPRlogoTxt.png"/></div>
+        </div>
+        <ul class="spr__headerLinksList">
+          <li class="spr__headerLink"><a class="landing_page" href="/about">about</a></li>
+          <li class="spr__headerLink"><a class="landing_page" href="/sovereign">Sovereign</a></li>
+        </ul>
+        <label class="spr__menuMobTrig" for="mobMenuOpen" onclick="checkMobMenu()">
+          <div class="spr__menuMobTrigInner"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></div>
+        </label>
+        <div class="spr__menuMobWrap">
+          <div class="spr__menuMobInner">
+            <ul class="spr__menuMobList">
+              <li><a href="/about">About</a>
+                <hr class="mobMenuSeperator"/>
+              </li>
+              <li>
+                <label for="mobMenuContent1">Projects</label>
+                <input type="checkbox" id="mobMenuContent1"/>
+                <div class="spr__headerMobMenuCollapse">
+                  <ul class="spr__headerMobMenuCollapseList">
+                    <li><a href="/Project_pages/chlorophyll.html">Osian Chlorophyll</a></li>
+                    <li><a href="/Project_pages/city.html">Codename City</a></li>
+                    <li><a href="">Origine</a>
+                      <!-- <div class="sidebarProjectMarker">coming soon</div> -->
+                    </li>
+                    <li><a href="">Osian Heights</a>
+                      <!-- <div class="sidebarProjectMarker">coming soon</div> -->
+                    </li>
+                    <li><a href="">Osian One</a>
+                      <!-- <div class="sidebarProjectMarker">coming soon</div> -->
+                    </li>
+                    <li><a href="">Market of India</a>
+                      <!-- <div class="sidebarProjectMarker">coming soon</div> -->
+                    </li>
+                  </ul>
+                </div>
+                <hr class="mobMenuSeperator"/>
+              </li>
+              <li><a href="">Blog</a>
+                <hr class="mobMenuSeperator"/>
+              </li>
+              <li><a href="/sovereign">Sovereign</a>
+                <hr class="mobMenuSeperator"/>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spr__listingsMain">
+      <div class="spr__listingsInner">
+        <div class="spr__listingsContain">
+
+          <div class="spr__listingsItemPremium" onclick="location.href='/projects/osian-chlorophyll'">
+            <div class="spr__listingsItemPremiumDescWrap">
+              <div class="spr__listingsItemPremiumDesc">
+                <div class="spr__listingsItemPremiumTitle">Osian Chlorophyll</div>
+                <div class="spr__listingsItemPremiumSubTitle">Closer to nature, closer to a healthy life.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="spr__listingsItemPremiumSec" onclick="location.href='/projects/codename-city'"> -->
+          <div class="spr__listingsItemPremiumSec" data-toggle="modal" data-target="#cityProjectsModal">
+            <div class="spr__listingsItem">
+              <div class="spr__listingsItemImg"><img class="img-responsive" src="https://www.sprhighliving.com/images/projects/CITY/web/685-400/685-400.jpg" alt=""/></div>
+              <div class="spr__listingsItemDescWrap">
+                <div class="spr__listingsItemDesc">
+                  <div class="spr__listingsItemTitle">Codename City
+                    <hr class="spr__titleSeperator"/>
+                  </div>
+                  <div class="spr__listingsItemSubTitle">Scaling heights, changing skylines</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="spr__listingsItemPremiumSec">
+            <div class="spr__listingsItem">
+              <!-- <div class="spr__listingsItemMarker">
+                coming soon
+              </div> -->
+              <div class="spr__listingsItemImg"><img class="img-responsive" src="https://www.sprhighliving.com/images/projects/MOI/web/685_400/moi_tile.jpg" alt=""/></div>
+              <div class="spr__listingsItemDescWrap">
+                <div class="spr__listingsItemDesc">
+                  <div class="spr__listingsItemTitle">market of india
+                    <hr class="spr__titleSeperator"/>
+                  </div>
+                  <div class="spr__listingsItemSubTitle">One solution to all trade needs</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="spr__listingsItemOthersWrap">
+            <div class="spr__listingsItemOthers" onclick="location.href='/projects/'">
+              <div class="spr__listingsItem">
+                <!-- <div class="spr__listingsItemMarker">
+                  coming soon
+                </div> -->
+                <div class="spr__listingsItemImg"><img class="img-responsive" src="https://www.sprhighliving.com/images/projects/heights/web/685_400/osian_heights_tile.jpg" alt=""/></div>
+                <div class="spr__listingsItemDescWrap">
+                  <div class="spr__listingsItemDesc">
+                    <div class="spr__listingsItemTitle">OSIAN HEIGHTS
+                      <hr class="spr__titleSeperator"/>
+                    </div>
+                    <div class="spr__listingsItemSubTitle">For unmatched heights</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="spr__listingsItemOthers" onclick="location.href='/projects/'">
+              <div class="spr__listingsItem">
+                <!-- <div class="spr__listingsItemMarker">
+                  coming soon
+                </div> -->
+                <div class="spr__listingsItemImg"><img class="img-responsive" src="https://www.sprhighliving.com/images/projects/osian_one/web/685_400/o_one.jpg" alt=""/></div>
+                <div class="spr__listingsItemDescWrap">
+                  <div class="spr__listingsItemDesc">
+                    <div class="spr__listingsItemTitle">OSIAN ONE
+                      <hr class="spr__titleSeperator"/>
+                    </div>
+                    <div class="spr__listingsItemSubTitle">To bring Oneness within</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="spr__listingsItemOthers" onclick="location.href='/projects/'">
+              <div class="spr__listingsItem">
+                <!-- <div class="spr__listingsItemMarker">
+                  coming soon
+                </div> -->
+                <div class="spr__listingsItemImg"><img class="img-responsive" src="https://www.sprhighliving.com/images/projects/origine/web/685_400/tile_origine.jpg" alt=""/></div>
+                <div class="spr__listingsItemDescWrap">
+                  <div class="spr__listingsItemDesc">
+                    <div class="spr__listingsItemTitle">ORIGINE
+                      <hr class="spr__titleSeperator"/>
+                    </div>
+                    <div class="spr__listingsItemSubTitle">A place to truly call HOME</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="spr__listingsHeadline">
+
+            <div class="spr__listingsHeadlineWrap">
+              <!-- <div class="spr__listingsHeadlineTitle">headlines</div> -->
+              <div class="spr__listingsHeadlineSubTitle">
+                <div>SPR CITY Launching this summer.</div>
+                <div>A fully self contained supercity in the heart of Chennai</div>
+                <!-- <div class="spr__listingsHeadlineReadMore"><a>Read More</a></div> -->
+              </div>
+            </div>
+
+
+
+            <div class="spr__listingsHeadlineWrap">
+              <!-- <div class="spr__listingsHeadlineTitle">Facts</div> -->
+              <div class="spr__listingsHeadlineSubTitle">
+                <div>SPR now takes pride to develop an integrated township project –first of it’s kind in Chennai</div>
+              </div>
+            </div>
+
+            <div class="spr__listingsHeadlineWrap">
+              <div class="spr__listingsHeadlineSubTitle">
+                <div>Osian chlorophyll-A unique Green & Clean project belongs to SPR</div>
+              </div>
+            </div>
+
+            <div class="spr__listingsHeadlineWrap">
+              <div class="spr__listingsHeadlineSubTitle">
+                <div>Osian Heights-One of the tallest towers in North Chennai was built by SPR</div>
+              </div>
+            </div>
+
+            <div class="spr__listingsHeadlineWrap">
+              <div class="spr__listingsHeadlineSubTitle">
+                <div>SPR City comes up with all in one roof for residential and commercial</div>
+              </div>
+            </div>
+
+            <div class="spr__listingsHeadlineWrap">
+              <div class="spr__listingsHeadlineSubTitle">
+                <div>SPR’s Market of India is the largest of it’s kind in India</div>
+              </div>
+            </div>
+
+            <div class="spr__listingsHeadlineWrap">
+              <div class="spr__listingsHeadlineSubTitle">
+                <div>SPR City now becomes a bigger identity of Chennai</div>
+              </div>
+            </div>
+
+            <div class="spr__listingsHeadlineWrap">
+              <div class="spr__listingsHeadlineSubTitle">
+                <div>Our projects have built a reputation of quality, integrity and trust, under the brand name of “OSIAN”</div>
+              </div>
+            </div>
+
+            <div class="spr__listingsHeadlineWrap">
+              <div class="spr__listingsHeadlineSubTitle">
+                <div>Strategically located to become the next hub of Chennai</div>
+              </div>
+            </div>
+
+            <div class="spr__listingsHeadlineWrap">
+              <div class="spr__listingsHeadlineSubTitle">
+                <div>SPR City- A city within the city</div>
+              </div>
+            </div>
+
+            <div class="spr__listingsHeadlineWrap">
+              <div class="spr__listingsHeadlineSubTitle">
+                <div>Switch to a Green living, Switch to Chlorophyll</div>
+              </div>
+            </div>
+
+            <div class="spr__listingsHeadlineWrap">
+              <div class="spr__listingsHeadlineSubTitle">
+                <div>Elevated 650 m sky- walk jogging track at 150 feet above the ground level</div>
+              </div>
+            </div>
+
+            <div class="spr__listingsHeadlineWrap">
+              <div class="spr__listingsHeadlineSubTitle">
+                <div>India’s largest terrace garden with over 4.5 acres of greeneries</div>
+              </div>
+            </div>
+
+          </div>
+          <div class="spr__listingsReviewMsg">
+            <div class="spr__listingsRevBox">
+              <div class="spr__listingsReviewWrap">
+                <div class="spr__listingsRevImg"><span><span style="background-image: url(images/Iyyapan_mini.jpg);"></span></span></div>
+                <div class="spr__listingsReview">I am a proud owner of a flat in Osian Chlorophyll, a choice to lift my living style. I was the one who booked when it was just a green field and watchfully seeing it raising and am still excited about the project concept, specification and quality of construction. The amenities list is exhaustive and I wish I will thoroughly enjoy it from the moment I occupy my flat. My flat is THE BEST vastu complaint and nobody can challenge about it. And now eagerly waiting to receive my BRAND NEW FLAT KEY.</div>
+                <div class="spr__listingsReviewerName">Iyappan S C</div>
+                <div class="spr__listingsReviewerDesig">L &amp;T Chennai (Flat Owner at Osian Chlorophyll)</div>
+              </div>
+              <div class="spr__listingsReviewWrap">
+                <div class="spr__listingsRevImg"><span><span style="background-image: url(images/murugaesan.jpg);"></span></span></div>
+                <div class="spr__listingsReview">I would like to express my satisfaction in choosing the subject project by Promoter SPR. My heartiest congratulations and appreciation to all your executives &amp; staff members. I wish your organization to grow more and more with a dedicated service to the people with more such good quality apartments. I take this opportunity to thank you and your team members in SPR for the excellent support and cooperation given from the day of booking.</div>
+                <div class="spr__listingsReviewerName">Murugaesan C</div>
+                <div class="spr__listingsReviewerDesig">National Contracting Co. Ltd, Saudi Arabia Flat (Flat Owner at Osian Chlorophyll)</div>
+              </div>
+              <div class="spr__listingsReviewWrap">
+                <div class="spr__listingsRevImg"><span><span style="background-image: url(images/testimonial_img_mini.jpg);"></span></span></div>
+                <div class="spr__listingsReview">My compliments to Team SPR for their sincere efforts to translate our dream of owning a comfortable flat in an elite gated community into reality. Having booked the apartment during the soft launch in December 2010, there have been some tough times through the development of the project. However, I have been closely observing the progress of the project right from inception and decisions taken by the developers; I can confidently say that the quality and safety of the building are not compromised. Eagerly awaiting to be aboard “The Green Revolution”.</div>
+                <div class="spr__listingsReviewerName">Sundhar C</div>
+                <div class="spr__listingsReviewerDesig">L &amp;T Chennai (Flat Owner at Osian Chlorophyll)</div>
+              </div>
+
+
+              <div class="spr__listingsReviewWrap">
+                <div class="spr__listingsRevImg"><span><span style="background-image: url(images/devaraj.jpg);"></span></span></div>
+                <div class="spr__listingsReview">“I was born and bought up in the same Perambur region. When I saw the video of MOI, I was very happy and felt like I’m in china. It will definitely become a largest wholesale market in India. After 3 years, it will be a milestone for Indian wholesale market where people around the world will visit “</div>
+                <div class="spr__listingsReviewerName">Mr. Devaraj</div>
+                <!-- <div class="spr__listingsReviewerDesig">L &amp;T Chennai (Flat Owner at Osian Chlorophyll)</div> -->
+              </div>
+              <div class="spr__listingsReviewWrap">
+                <div class="spr__listingsRevImg"><span><span style="background-image: url(images/abhishek.jpg);"></span></span></div>
+                <div class="spr__listingsReview">“This is my very big investment till now, feeling satisfied that I have chosen the right place for investment and looking forward to book more in various phases. Will definitely recommend to my friends and family for buying shops in MOI .Congratulations to SPR”</div>
+                <div class="spr__listingsReviewerName">Mr.Abhishek Tiwari</div>
+                <!-- <div class="spr__listingsReviewerDesig">L &amp;T Chennai (Flat Owner at Osian Chlorophyll)</div> -->
+              </div>
+              <div class="spr__listingsReviewWrap">
+                <div class="spr__listingsRevImg"><span><span style="background-image: url(images/suresh.jpg);"></span></span></div>
+                <div class="spr__listingsReview">“I’m a resident of Perambur and I feel proud for buying shop in MOI. I’m very sure that MOI will be a popular landmark in Chennai”</div>
+                <div class="spr__listingsReviewerName">Mr. Suresh</div>
+                <!-- <div class="spr__listingsReviewerDesig">L &amp;T Chennai (Flat Owner at Osian Chlorophyll)</div> -->
+              </div>
+              <div class="spr__listingsReviewWrap">
+                <div class="spr__listingsRevImg"><span><span style="background-image: url(images/hukmichand.jpg);"></span></span></div>
+                <div class="spr__listingsReview">“I was very impressed with their vision that I decided to buy a shop right away. I have spent most of my life in Sowcarpet and now I am going to be spending the rest of  my life in Sowcarpet in SPR City. Fantastic job by SPR and I wish the team All the Best"</div>
+                <div class="spr__listingsReviewerName">Mr. Hukmichand Shah</div>
+                <!-- <div class="spr__listingsReviewerDesig">L &amp;T Chennai (Flat Owner at Osian Chlorophyll)</div> -->
+              </div>
+              <div class="spr__listingsReviewWrap">
+                <div class="spr__listingsRevImg"><span><span style="background-image: url(images/latha.jpg);"></span></span></div>
+                <div class="spr__listingsReview">“I’m Latha and I have booked a shop in Ritchi street that is very popular for electronic goods. I was working for MNC’s and now planning to do a business and so I was searching for a  right place to invest  and came across MOI. Decided to invest as it gives wonderful opportunity to grow my business”</div>
+                <div class="spr__listingsReviewerName">Mrs Latha</div>
+                <!-- <div class="spr__listingsReviewerDesig">L &amp;T Chennai (Flat Owner at Osian Chlorophyll)</div> -->
+              </div>
+            </div>
+            <div class="spr__listingsMsgBox">
+              <div class="spr__listingsMsgBoxTitle">CEO speaks.
+                <div>The coming year will be a good time to invest"</div>
+              </div>
+              <input type="checkbox" id="readMoreCeo">
+              <div class="spr__listingsMsgBoxSubTitle">Luxury is playing a key role in buyer’s decision making says Hitesh P Kawad, managing director, Osian Chlorophyll. What factors have influenced buyer preferences this year? Chennai is a conservative consumer market. The buyers here are still first time investors. The distance from work, educational institutions, health facilities and amenities available in the project, aesthetics, layout and convenience for the family are the factors home-buyers look at while visiting a project. Luxury is also playing another key factor in the decision making process now. While the definition of luxury varies from person to person, investors are looking for `value for position’ homes, wherein the homes they opt for match their social strata. People are ready to spend extra money to get their `value for position’ homes.
+                <p>What is the green buildings scenario in Chennai? How can we raise awareness about the importance of such projects?</p>
+                <p>Only six per cent of the city is covered by green spaces. This is very less as compared to 30 to 35 per cent in New Delhi. Green buildings are very important for Chennai. However, due to higher expenses involved in the process, much emphasis is not given to such projects. We find fewer developers taking up green building ventures. The government needs to take steps to promote the idea among builders by offering relaxations and exemptions.
+How will the recent change in FDI norms in reality sector influence the growth of the industry?</p>
+                <p>The announcement is a good initiative but the government should work on parallel sources of funds. There should be a streamlined process to bring funds so that it would benefit the industry. There should be regulations on non-banking institutes and private lending. Also, more capital forums and investment platforms should be set up where clients, bankers and developers can communicate directly.</p>
+                <p>What are the various developments you see taking place in the property sector in 2016?
+                The coming year will be a good time to invest as the prices are going to be more or less stable. With the state elections scheduled next year, the first half of the year will be stable. Any prominent changes will be noticed only after the elections are over. Until then, only routine developments will take place.
+                </p>
+            </div>
+            <br>
+            <label for="readMoreCeo">Read More>></label></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer Inculde-->
+    <div class="spr__footerMain">
+      <div class="spr__footerInner">
+        <div class="spr__footerIconWrap">
+          <div class="spr__footerIcon"><img class="img-responsive" src="../images/logoDark.svg"/></div>
+        </div>
+        <div class="spr__footerLinksWrap">
+
+          <div class="spr__footerLinksSet">
+            <label class="spr__footerLinksSetTitle" for="set4">Social Media</label>
+            <input class="spr__footerLinksSetCheckbox" type="checkbox" id="set4"/>
+            <div class="spr__footerLinksSetListWrap">
+              <ul class="spr__footerLinksSetList">
+                <li><a href="https://www.facebook.com/SPRIndia/" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/sprosian" target="_blank">Twitter</a></li>
+                <li><a href="https://plus.google.com/u/0/115967562277429436868" target="_blank">Google</a></li>
+                <li><a href="https://www.youtube.com/channel/UCr1l58eXkXpdIEFOwWdCRhQ" target="_blank">Youtube</a></li>
+                <li><a href="https://www.linkedin.com/company/10446753/" target="_blank">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="spr__footerLinksSet">
+            <label class="spr__footerLinksSetTitle" for="set3">Quick Links</label>
+            <input class="spr__footerLinksSetCheckbox" type="checkbox" id="set3"/>
+            <div class="spr__footerLinksSetListWrap">
+              <ul class="spr__footerLinksSetList">
+                <li><a href="">Careers</a></li>
+                <li><a href="">EMI Calculator</a></li>
+                <li><a href="">Media centre</a></li>
+                <li><a href="" onclick="event.preventDefault();termModalTriggerFunc();">Terms and Conditions</a></li>
+                <li><a href="" onclick="event.preventDefault();sovereignTermModalTrig();">Sovereign Terms</a></li>
+                <li><a href="">Privacy policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="spr__footerLinksSet">
+            <label class="spr__footerLinksSetTitle" for="set2">projects</label>
+            <input class="spr__footerLinksSetCheckbox" type="checkbox" id="set2"/>
+            <div class="spr__footerLinksSetListWrap">
+              <ul class="spr__footerLinksSetList">
+                <li><a href="/projects/osian-chlorophyll">Osian Chlorophyll</a></li>
+                <li><a href="/projects/codename-city">Codename City</a></li>
+                <li><a href="">Market of India</a>
+                  <!-- <div class="soonMaker">coming soon</div> -->
+                </li>
+                <li><a href="">Origine</a>
+                  <!-- <div class="soonMaker">coming soon</div> -->
+                </li>
+                <li><a href="">Osian Heights</a>
+                  <!-- <div class="soonMaker">coming soon</div> -->
+                </li>
+                <li><a href="">Osian One</a>
+                  <!-- <div class="soonMaker">coming soon</div> -->
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="spr__footerLinksSet">
+            <label class="spr__footerLinksSetTitle" for="set1">SPR Highliving</label>
+            <input class="spr__footerLinksSetCheckbox" type="checkbox" id="set1"/>
+            <div class="spr__footerLinksSetListWrap">
+              <ul class="spr__footerLinksSetList">
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/about">About</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="footerTermsModal" class="modal fade spr__footerTermsModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            	<p>This disclaimer (“Disclaimer”) will be applicable to the Website. By using or accessing the Website you agree with the Disclaimer without any qualification or limitation SPR Construction Private Limited (“The Company”) reserves the right to add, alter or delete material from the Website at any time and may, at any time, revise these Terms without notifying you. You are bound by any such amendments and the Company therefore advise that you periodically visit this page to review the current Terms.</p>
+            	<p>No information given under this Website creates a warranty or expands the scope of any warranty that cannot be disclaimed under the applicable laws. Your use of the Website is solely at your own risk. This website is for guidance only. It does not constitute part of an offer or contract.</p>
+            	<p>The particulars contained or the details mentioned in respect of the Projects / developments undertaken by the Company including depicting banners/posters of the Project/development. The contents are being modified in terms of the stipulations / recommendations under the Real Estate (Regulation and Development) Act 2016, and Rules made there under (“RERA”) and accordingly may not be fully in line thereof as of date. You are therefore, required to verify all the details, including area, amenities, services, terms of sales, payments and other relevant terms independently with the sales team/ company prior to concluding any decision for buying any unit(s) in any of our projects/developments. Till such time the details are fully updated, the said information will not be construed as an advertisement. To find out more about our projects / developments, please telephone our sales centres or visit our sales office and speak to our sales staff.</p>
+            	<p>In no event will the Company, its management, its associate companies and /or its employees be liable for claim made by the users including seeking any cancellation for any of the inaccuracies in the information provided in this Website, though all efforts have to be made to ensure accuracy. The Company under no circumstances will be liable for any expense, loss or damage including, without limitation, indirect or consequential loss or damage, or any expense, loss or damage whatsoever arising from use, or loss of use, of data, arising out of or in connection with the use of this website.</p>
+            	<p>This website is currently being updated. While enough care is taken by the Company to ensure that information in the website is up to date, accurate and correct, readers are requested to make their independent enquiry before relying upon the same. All content including brochures are purely for general informational purposes only. It is not meant to constitute an offer or solicitation. It is a Visual representation of the project shown on this site. No furniture or accessories shown in any of the visuals are provided with the unit. This website material does not constitute an offer and/or contract of any type between the Developer/Promoter/Owner and the recipient, all intending purchaser/s in any of the projects shall be governed by the terms and conditions envisaged under The Real Estate (Regulation And Development) Act 2016. Nothing on the website should be misconstrued as advertising, marketing, booking, selling or an offer for sale or invitation to purchase a unit in any project by the company/firm. The company/firm is not responsible for the consequences of any action taken by the viewer relying on such material/information on this website.</p>
+            	<p>To find out more about projects/developments, please call +91 81486 81486 or visit our sales office during working hours and get in touch with authorized sales representatives of the Company.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">I Agree</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footerSovereignTermsModal" class="modal fade spr__footerTermsModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            	<p>Here Sovereign term will come</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">I Agree</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="cityProjectsModal" class="modal fade spr__footerTermsModal spr__cityModalContentMain" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            	<h3 class="spr__cityModalContentTitle">SPR City Highliving District</h3 class="">
+              <div class="spr__cityModalContent">
+                <a href="#" class="spr__cityModalImg">
+                  <img src="https://www.sprhighliving.com/images/projects/heights/web/685_400/osian_heights_tile.jpg" alt="">
+                  <div class="spr__cityModalImgDesc">
+                    Tower A - Barcelona 2&3 BHK
+                  </div>
+                </a>
+                <a href="#" class="spr__cityModalImg">
+                  <img src="https://www.sprhighliving.com/images/projects/osian_one/web/685_400/o_one.jpg" alt="">
+                  <div class="spr__cityModalImgDesc">
+                    Tower A - Barcelona 2&3 BHK
+                  </div>
+                </a>
+                <a href="#" class="spr__cityModalImg">
+                  <img src="https://www.sprhighliving.com/images/projects/origine/web/685_400/tile_origine.jpg" alt="">
+                  <div class="spr__cityModalImgDesc">
+                    Tower A - Barcelona 2&3 BHK
+                  </div>
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

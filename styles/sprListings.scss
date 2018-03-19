@@ -1,0 +1,437 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  margin: 30px;
+  @media (max-width: 768px) {
+    font-size: 12px;
+    margin: 0px;
+  }
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.spr {
+  &__listingsMain {
+
+  }
+  &__listingsInner {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  &__listingsItemPremium {
+    display: table;
+    width: 100%;
+    background-image: url(../images/projects/chlorophyll/web/header/head_chlorophyll.jpg);
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+
+    height: 55vh;
+    min-height: 420px;
+    // background-color: #676767;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    margin: 0 0 0.7%;
+
+    @media (max-width: 640px) {
+        height: 80vh;
+    }
+
+  }
+  &__listingsContain {
+    overflow: auto;
+  }
+  &__listingsItemPremiumDescWrap {
+    display: table-cell;
+    vertical-align: bottom;
+  }
+  &__listingsItemPremiumDesc {
+    padding: 40px 14px;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+
+     @media (max-width: 640px) {
+        height: 80vh;
+        padding: 47% 14px;
+    }
+  }
+  &__listingsItemPremiumTitle {
+    font-family: Serif;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 44px;
+    margin: 0 0 14px;
+    padding: 0px 15px;
+    @media(max-width: 640px) {
+      font-size: 30px;
+    }
+  }
+  &__listingsItemPremiumSubTitle {
+  	font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    @media(max-width: 640px) {
+      font-size: 14px;
+    }
+  }
+
+  &__listingsItem {
+    // display: table;
+    width: 100%;
+    // background-image: url(http://via.placeholder.com/685x400/aaaaaa/f5f5f5);
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+  }
+  &__listingsItemMarker {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #e4d4b7;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    z-index: 1;
+  }
+  &__listingsItemTitle {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    line-height: 47px;
+    text-shadow: 0 2px 18px 0 #000000;
+    text-transform: uppercase;
+    @media(max-width: 992px) {
+      font-size: 24px;
+    }
+  }
+  &__titleSeperator {
+    width: 80%;
+    margin: 15px auto 15px;
+    background-color: #fff;
+    opacity: 0.4;
+    @media(max-width: 640px) {
+      margin: 9px auto 9px;
+    }
+  }
+  &__listingsItemDescWrap {
+    // display: table-cell;
+    position: absolute;
+    // vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    // display: table;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+  }
+  &__listingsItemDesc {
+    display: block;
+    position: relative;
+    top: 38%;
+    padding: 0 10px;
+  }
+
+  &__listingsItemPremiumSec {
+    width: 49.65%;
+    display: inline-block;
+    float: left;
+    margin-bottom: 0.7%;
+    @media(max-width: 640px) {
+      width: 100%;
+    }
+  }
+  .spr__listingsItemPremium + &__listingsItemPremiumSec {
+    margin: 0 0.7% 0.7% 0;
+    @media(max-width: 640px) {
+      margin: 0 0 1% 0;
+    }
+  }
+  &__listingsItemImg > img {
+    width: 100%;
+  }
+
+  &__listingsItemOthers {
+    width: 32.85%;
+    display: inline-block;
+    float: left;
+    margin-bottom: 0.7%;
+    overflow: hidden;
+    &:before {
+      content: ' ';
+      position: absolute;
+      top: 0px;
+    }
+    @media(max-width: 992px) {
+      width: 49.5%;
+    }
+    @media(max-width: 640px) {
+      width: 100%;
+    }
+    &:nth-child(2) {
+      margin: 0 0.7% 0.7%;
+      @media(max-width: 992px) {
+        margin: 0 0 1%;
+      }
+    }
+    &:nth-child(1) {
+      margin: 0;
+      @media(max-width: 992px) {
+        margin: 0 1% 1% 0;
+      }
+      @media(max-width: 640px) {
+        margin: 0 0 1% 0;
+      }
+    }
+    &:nth-child(3) {
+      width: 32.85%;
+      @media(max-width: 992px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__listingsHeadline {
+    background-color: #003255;
+    color: #C2B49A;
+    width: 100%;
+    height: 310px;
+    text-align: center;
+  	font-weight: 300;
+  	letter-spacing: 2px;
+  	line-height: 32px;
+    padding: 45px 10px;
+    margin: 0 0 0.7% !important;
+    float: left;
+    @media(max-width: 992px) {
+      height: auto;
+    }
+    & .slick-track > div:not(.slick-current) {
+      visibility: hidden;
+    }
+    .slick-dots {
+      bottom: 25px;
+      li {
+        width: 15px;
+      }
+    }
+  }
+  // &__listingsHeadlineWrap {
+  //   &:not(.slick-active) {
+  //     display: none;
+  //   }
+  // }
+  &__listingsHeadlineWrap {
+    display: table !important;
+    > div {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  &__listingsHeadlineTitle {
+    text-transform: uppercase;
+    font-size: 24px;
+    padding: 0 0 34px;
+  }
+  &__listingsHeadlineSubTitle {
+    font-size: 30px;
+  	line-height: 47px;
+    @media(max-width: 992px) {
+      font-size: 24px;
+      padding: 0px 15px;
+    }
+  }
+  &__listingsHeadlineReadMore {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 26px 0 0;
+    a {
+      color: #C2B49A;
+      text-decoration: underline;
+    }
+  }
+
+
+  &__listingsRevBox {
+    text-align: center;
+    background-color: #C2B49A;
+    height: 494px;
+    padding: 40px 30px;
+    color: #003255;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    .slick-track > div:not(.slick-current) {
+      visibility: hidden;
+    }
+    .slick-dots {
+      left: 0px;
+      bottom: 20px;
+    }
+    .slick-list {
+      @media(max-width: 640px) {
+        padding: 0px !important;
+      }
+    }
+  }
+  &__listingsReviewMsg > div {
+    display: inline-block;
+    width: 49.65%;
+    height: 92vh;
+    float: left;
+    text-align: center;
+    font-weight: 500;
+    overflow: hidden;
+    margin-bottom: 3%;
+    &:nth-child(2) {
+      overflow: auto;
+    }
+    @media(max-width: 992px) {
+      height: 90vh;
+    }
+    @media(max-width: 640px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__listingsReviewMsg > div:first-child {
+    margin: 0 0.7% 3% 0;
+    @media(max-width: 640px) {
+      margin: 0 0 1% 0;
+    }
+  }
+  &__listingsRevImg span {
+    display: inline-block;
+    box-shadow: 4px 4px 16px 0 rgba(0,0,0,0.14);
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 8px;
+
+  }
+
+    &__listingsRevImg span span {
+    display: block;
+    background-image: url(../images/murugaesan.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    }
+
+  &__listingsRevImg span, &__listingsRevImg img {
+    border-radius: 50%;
+  }
+  &__listingsRevImg {
+    margin-bottom: 42px;
+  }
+  &__listingsReviewerName {
+    margin: 25px 0 0;
+    font-weight: 600;
+  }
+  &__listingsMsgBox {
+    position: relative;
+    // padding: 50px 60px 60px;
+    padding: 70px 60px 5%;
+    background-image: url(../images/ceo_speaks.jpg);
+    background-position: center;
+    background-size: cover;
+    @media(max-width: 640px) {
+      padding: 50px 60px 60px;
+    }
+    label {
+      color: #ffffff;
+      font-weight: 300;
+      cursor: pointer;
+    }
+  }
+  &__listingsMsgBoxTitle {
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 36px;
+  }
+  &__listingsMsgBoxSubTitle {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 28px;
+    max-height: 42vh;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    label {
+      // position: absolute;
+      // bottom: 30px;
+      // left: 45%;
+      font-weight: 300;
+    }
+  }
+
+  &__cityModalContentMain {
+    background-color: rgba(0,0,0,0.45);
+    .modal-dialog {
+      top: 25% !important;
+      @media(max-width: 768px) {
+        top: 5% !important;
+      }
+    }
+    .modal-content {
+      background-color: transparent;
+      box-shadow: none;
+      border: 0px;
+    }
+    .modal-body {
+      max-height: 100% !important;
+    }
+  }
+  &__cityModalContent {
+
+  }
+  &__cityModalContentTitle {
+    font-size: 20px;
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-weight: 200;
+    @media(max-width: 768px) {
+      font-size: 17px;
+      text-align: center;
+    }
+  }
+  &__cityModalImg {
+    width: 32%;
+    display: inline-block;
+    padding: 0 1% 5% 0;
+    text-decoration: none;
+    cursor: pointer;
+    @media(max-width: 768px) {
+      display: block;
+      width: 45%;
+      margin: 0 auto;
+    }
+    > img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+  &__cityModalImgDesc {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #ffffff;
+  }
+}
+
+#readMoreCeo {
+  display: none;
+  &:checked + .spr__listingsMsgBoxSubTitle {
+    max-height: 100%;
+    // overflow: auto;
+  }
+}

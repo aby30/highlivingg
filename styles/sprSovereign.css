@@ -1,0 +1,422 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  margin: 30px; }
+  @media (max-width: 768px) {
+    body {
+      font-size: 12px;
+      margin: 0px; } }
+
+.spr__sovereignMain {
+  overflow-x: hidden; }
+
+.spr__sovereignBannerInner {
+  display: table;
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  padding: 0px 0px;
+  text-align: center;
+  background-image: url(../images/sovereignBanner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0  0 1%; }
+  @media (max-width: 640px) {
+    .spr__sovereignBannerInner {
+      margin: 0  0 1px; } }
+
+.spr__sovereignBannerTitle {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6); }
+  .spr__sovereignBannerTitle > img {
+    width: 385px; }
+    @media (max-width: 640px) {
+      .spr__sovereignBannerTitle > img {
+        width: 300px; } }
+
+.spr__sovereignBannerBtn {
+  position: absolute;
+  width: 100%;
+  vertical-align: bottom; }
+
+.spr__sovereignNavbarInner {
+  background-color: #32221E;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 1%;
+  display: block; }
+  @media (max-width: 640px) {
+    .spr__sovereignNavbarInner {
+      display: none; } }
+
+.spr__sovereignNavbarlist {
+  padding: 0px;
+  list-style-type: none;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 19px; }
+  .spr__sovereignNavbarlist li {
+    display: inline-block;
+    text-transform: uppercase; }
+    .spr__sovereignNavbarlist li > a {
+      display: block;
+      color: #C2B49A;
+      text-decoration: none;
+      cursor: pointer;
+      padding: 20px 35px; }
+
+.spr__sovereignInner {
+  overflow-x: hidden; }
+  @media (max-width: 640px) {
+    .spr__sovereignInner > div {
+      margin: 0 0 1px; } }
+
+.spr__sovereigCardImg {
+  margin: 0 auto 70px; }
+  @media (max-width: 640px) {
+    .spr__sovereigCardImg {
+      width: 80%; } }
+  .spr__sovereigCardImg > img {
+    max-width: 100%;
+    height: auto; }
+
+.spr__sovereigTaglineWrap {
+  background-color: rgba(194, 180, 154, 0.3);
+  text-align: center; }
+
+.spr__sovereigTaglineInner {
+  width: 75%;
+  margin: 0 auto 1%;
+  padding: 63px 0px 96px; }
+  @media (max-width: 640px) {
+    .spr__sovereigTaglineInner {
+      width: 90%;
+      padding: 40px 0px 67px; } }
+
+.spr__sovereigTaglineTxt {
+  color: #32221E;
+  font-size: 40px;
+  margin: 20px; }
+  @media (max-width: 640px) {
+    .spr__sovereigTaglineTxt {
+      font-size: 24px;
+      margin: 10px; } }
+
+.spr__sovereigTaglineSub {
+  font-size: 20px; }
+  @media (max-width: 640px) {
+    .spr__sovereigTaglineSub {
+      font-size: 18px;
+      margin: 13px 0 0; } }
+
+.spr__sovereigHowTo {
+  display: inline-block;
+  width: 45%;
+  margin: 80px 2% 60px;
+  vertical-align: text-top; }
+  @media (max-width: 640px) {
+    .spr__sovereigHowTo {
+      width: 100%;
+      margin: 25px 0% 20px; }
+      .spr__sovereigHowTo:nth-of-type(4) {
+        margin: 0px 0% 20px; } }
+
+.spr__sovereigHowToBox {
+  background-color: #ffffff;
+  border: 1px solid #C2B49A;
+  border-radius: 3px; }
+
+.spr__sovereigHowToBoxTitle {
+  background-color: #C2B49A;
+  color: #ffffff;
+  padding: 10px;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.spr__sovereigHowToBoxAns {
+  padding: 20px 25px;
+  min-height: 130px;
+  color: #32221E;
+  font-size: 14px; }
+
+.spr__packagesWrapInner {
+  display: none; }
+  @media (max-width: 640px) {
+    .spr__packagesWrapInner {
+      white-space: nowrap;
+      overflow: auto;
+      overflow-x: scroll;
+      padding: 0px 17px 24px 0;
+      margin: 0 -18px 0 0; } }
+
+.spr__package {
+  display: inline-block;
+  width: 22%;
+  height: 420px;
+  padding: 10px;
+  background-color: #ffffff;
+  margin: 0 1% 7% 0;
+  -webkit-box-shadow: 1px 46px 119px -75px black;
+  -moz-box-shadow: 1px 46px 119px -75px black;
+  box-shadow: 1px 46px 119px -75px black; }
+  @media (max-width: 640px) {
+    .spr__package {
+      width: 221px;
+      white-space: normal; } }
+
+.spr__package:last-child {
+  margin: 0 0 7%; }
+
+.spr__packageName {
+  padding: 25px 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 22px;
+  text-transform: uppercase; }
+
+.spr__packageDetails {
+  color: #32221E;
+  font-size: 14px;
+  line-height: 28px; }
+
+.spr__packageInnerSeperator {
+  background-color: #D8D8D8;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0px; }
+
+.spr__packageOtherGenrlTerms {
+  color: #32221E;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 500; }
+
+.spr__sovereigUseOfPtsMain {
+  background-color: #C2B49A;
+  margin: 0 0 1%; }
+
+.spr__sovereigUseOfPtsInner {
+  width: 75%;
+  color: #32221E;
+  text-align: center;
+  padding: 50px 20px 75px;
+  margin: 0 auto; }
+  @media (max-width: 640px) {
+    .spr__sovereigUseOfPtsInner {
+      width: 85%;
+      padding: 50px 20px 25px; } }
+
+.spr__sovereigUseOfPtsTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 50px; }
+  @media (max-width: 640px) {
+    .spr__sovereigUseOfPtsTitle {
+      display: none; } }
+
+.spr__sovereigUseOfPts {
+  display: inline-block;
+  width: 32%; }
+  @media (max-width: 640px) {
+    .spr__sovereigUseOfPts {
+      width: 100%;
+      margin: 0 0 70px; } }
+
+.spr__sovereigUseOfPtsIcon {
+  margin: 0 0 40px; }
+  .spr__sovereigUseOfPtsIcon > img {
+    width: 60px; }
+
+.spr__sovereigUseOfPtsTxt {
+  font-size: 14px;
+  font-weight: 500; }
+
+.spr__sovereigFaqInner {
+  text-align: left;
+  color: #32221E;
+  width: 70%;
+  margin: 0 auto 114px; }
+  @media (max-width: 640px) {
+    .spr__sovereigFaqInner {
+      width: 100%;
+      margin: 0 auto 0; } }
+
+.spr__sovereigFaqHeader {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 52px;
+  text-align: center;
+  margin: 60px 0 48px; }
+  @media (max-width: 640px) {
+    .spr__sovereigFaqHeader {
+      display: none; } }
+
+.spr__sovereigFaq {
+  padding: 18px 20px;
+  margin: 0 0 10px;
+  background-color: rgba(194, 180, 154, 0.2); }
+  @media (max-width: 640px) {
+    .spr__sovereigFaq {
+      margin: 0 0 4px;
+      padding: 18px 25px; } }
+  .spr__sovereigFaq > input:checked + .spr__sovereigFaqAns {
+    max-height: 2000px; }
+
+.spr__sovereigFaqTitle {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin: 0;
+  cursor: pointer; }
+  @media (max-width: 640px) {
+    .spr__sovereigFaqTitle {
+      font-size: 14px; } }
+  .spr__sovereigFaqTitle + input {
+    display: none; }
+
+.spr__sovereigFaqAns {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 500; }
+
+.spr__sovereigFaqAnsInner {
+  padding: 16px 0 0px;
+  border-top: 1px solid #C2B49A;
+  margin: 10px 0 0; }
+
+.spr__mobileLabelPropertyKeyPts {
+  background-color: #32221E;
+  width: 100%;
+  padding: 20px 10px;
+  text-align: center;
+  color: #C2B49A;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: none; }
+  @media (max-width: 640px) {
+    .spr__mobileLabelPropertyKeyPts {
+      display: block; } }
+  .spr__mobileLabelPropertyKeyPts + input {
+    display: none; }
+
+.spr__propertyEnquiryInner {
+  background-color: rgba(194, 180, 154, 0.3);
+  padding: 36px 0px;
+  text-align: center;
+  margin: 0 0 1%; }
+  @media (max-width: 640px) {
+    .spr__propertyEnquiryInner {
+      padding: 0; } }
+
+.spr__propertyEnquiryInnerWrap {
+  width: 75%;
+  margin: 0 auto; }
+  @media (max-width: 640px) {
+    .spr__propertyEnquiryInnerWrap {
+      width: 95%; } }
+
+.spr__propertyEnquiryTitle {
+  color: #525222;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 32px;
+  text-align: center;
+  margin: 0 0 34px;
+  text-transform: uppercase; }
+  @media (max-width: 640px) {
+    .spr__propertyEnquiryTitle {
+      display: none; } }
+
+.spr__propertyEnquiryForm input, .spr__propertyEnquiryForm textarea {
+  width: 32.2%;
+  float: left;
+  padding: 13px 15px;
+  margin: 0 0 20px 0;
+  border-radius: 3px;
+  border: none;
+  box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
+  resize: none; }
+  @media (max-width: 640px) {
+    .spr__propertyEnquiryForm input, .spr__propertyEnquiryForm textarea {
+      width: 100%;
+      margin: 0 0 10px; } }
+  .spr__propertyEnquiryForm input textarea, .spr__propertyEnquiryForm textarea textarea {
+    height: 50px; }
+    @media (max-width: 640px) {
+      .spr__propertyEnquiryForm input textarea, .spr__propertyEnquiryForm textarea textarea {
+        height: 235px; } }
+
+.spr__propertyEnquiryForm > input:nth-child(2) {
+  margin: 0 1.6% 20px 1.7%; }
+  @media (max-width: 640px) {
+    .spr__propertyEnquiryForm > input:nth-child(2) {
+      width: 100%;
+      margin: 0 0 10px; } }
+
+.spr__propertyEnquiryForm > div > textarea {
+  width: 100%; }
+
+.spr__propertyEnquiryForm button {
+  height: 50px;
+  width: 50%;
+  border-radius: 3px;
+  background-color: #C2B49A;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  color: #32221E;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  margin: 0 0 40px;
+  text-transform: uppercase; }
+  @media (max-width: 640px) {
+    .spr__propertyEnquiryForm button {
+      width: 100%;
+      margin: 0 0 10px; } }
+
+.spr__propertyEnquiryFormMsg {
+  color: #525222;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px; }
+  @media (max-width: 640px) {
+    .spr__propertyEnquiryFormMsg {
+      background-color: #32221E;
+      font-size: 18px;
+      padding: 10px 0px;
+      color: #C2B49A;
+      margin: 0px -10px; } }
+
+.spr__sovereigTaglineWrap, .spr__sovereigUseOfPtsWrap, .spr__sovereigFaqInner, .spr__propertyEnquiryWrap {
+  transition: all 0.3s ease; }
+  @media (max-width: 640px) {
+    .spr__sovereigTaglineWrap, .spr__sovereigUseOfPtsWrap, .spr__sovereigFaqInner, .spr__propertyEnquiryWrap {
+      max-height: 0px;
+      overflow: hidden; } }
+
+#sovereigTagline:checked + .spr__sovereigTaglineWrap, #sovereigUseOfPts:checked + .spr__sovereigUseOfPtsWrap, #sovereigFaq:checked + .spr__sovereigFaqInner, #propertyEnquiry:checked + .spr__propertyEnquiryWrap {
+  max-height: 2000px; }
+
+label {
+  margin: 0; }
+
+.bronze {
+  background-color: #ad6c45; }
+
+.silver {
+  background-color: #9b9b9b; }
+
+.gold {
+  background-color: #cfa24f; }
+
+.platinum {
+  background-color: #464d62; }

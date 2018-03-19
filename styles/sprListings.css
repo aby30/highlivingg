@@ -1,0 +1,374 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  margin: 30px; }
+  @media (max-width: 768px) {
+    body {
+      font-size: 12px;
+      margin: 0px; } }
+
+a:hover {
+  text-decoration: none; }
+
+.spr__listingsInner {
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+.spr__listingsItemPremium {
+  display: table;
+  width: 100%;
+  background-image: url(../images/projects/chlorophyll/web/header/head_chlorophyll.jpg);
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  height: 55vh;
+  min-height: 420px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  margin: 0 0 0.7%; }
+  @media (max-width: 640px) {
+    .spr__listingsItemPremium {
+      height: 80vh; } }
+
+.spr__listingsContain {
+  overflow: auto; }
+
+.spr__listingsItemPremiumDescWrap {
+  display: table-cell;
+  vertical-align: bottom; }
+
+.spr__listingsItemPremiumDesc {
+  padding: 40px 14px;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-transform: uppercase; }
+  @media (max-width: 640px) {
+    .spr__listingsItemPremiumDesc {
+      height: 80vh;
+      padding: 47% 14px; } }
+
+.spr__listingsItemPremiumTitle {
+  font-family: Serif;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  line-height: 44px;
+  margin: 0 0 14px;
+  padding: 0px 15px; }
+  @media (max-width: 640px) {
+    .spr__listingsItemPremiumTitle {
+      font-size: 30px; } }
+
+.spr__listingsItemPremiumSubTitle {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px; }
+  @media (max-width: 640px) {
+    .spr__listingsItemPremiumSubTitle {
+      font-size: 14px; } }
+
+.spr__listingsItem {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer; }
+
+.spr__listingsItemMarker {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #e4d4b7;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  z-index: 1; }
+
+.spr__listingsItemTitle {
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  line-height: 47px;
+  text-shadow: 0 2px 18px 0 #000000;
+  text-transform: uppercase; }
+  @media (max-width: 992px) {
+    .spr__listingsItemTitle {
+      font-size: 24px; } }
+
+.spr__titleSeperator {
+  width: 80%;
+  margin: 15px auto 15px;
+  background-color: #fff;
+  opacity: 0.4; }
+  @media (max-width: 640px) {
+    .spr__titleSeperator {
+      margin: 9px auto 9px; } }
+
+.spr__listingsItemDescWrap {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.spr__listingsItemDesc {
+  display: block;
+  position: relative;
+  top: 38%;
+  padding: 0 10px; }
+
+.spr__listingsItemPremiumSec {
+  width: 49.65%;
+  display: inline-block;
+  float: left;
+  margin-bottom: 0.7%; }
+  @media (max-width: 640px) {
+    .spr__listingsItemPremiumSec {
+      width: 100%; } }
+
+.spr__listingsItemPremium + .spr__listingsItemPremiumSec {
+  margin: 0 0.7% 0.7% 0; }
+  @media (max-width: 640px) {
+    .spr__listingsItemPremium + .spr__listingsItemPremiumSec {
+      margin: 0 0 1% 0; } }
+
+.spr__listingsItemImg > img {
+  width: 100%; }
+
+.spr__listingsItemOthers {
+  width: 32.85%;
+  display: inline-block;
+  float: left;
+  margin-bottom: 0.7%;
+  overflow: hidden; }
+  .spr__listingsItemOthers:before {
+    content: ' ';
+    position: absolute;
+    top: 0px; }
+  @media (max-width: 992px) {
+    .spr__listingsItemOthers {
+      width: 49.5%; } }
+  @media (max-width: 640px) {
+    .spr__listingsItemOthers {
+      width: 100%; } }
+  .spr__listingsItemOthers:nth-child(2) {
+    margin: 0 0.7% 0.7%; }
+    @media (max-width: 992px) {
+      .spr__listingsItemOthers:nth-child(2) {
+        margin: 0 0 1%; } }
+  .spr__listingsItemOthers:nth-child(1) {
+    margin: 0; }
+    @media (max-width: 992px) {
+      .spr__listingsItemOthers:nth-child(1) {
+        margin: 0 1% 1% 0; } }
+    @media (max-width: 640px) {
+      .spr__listingsItemOthers:nth-child(1) {
+        margin: 0 0 1% 0; } }
+  .spr__listingsItemOthers:nth-child(3) {
+    width: 32.85%; }
+    @media (max-width: 992px) {
+      .spr__listingsItemOthers:nth-child(3) {
+        width: 100%; } }
+
+.spr__listingsHeadline {
+  background-color: #003255;
+  color: #C2B49A;
+  width: 100%;
+  height: 310px;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 32px;
+  padding: 45px 10px;
+  margin: 0 0 0.7% !important;
+  float: left; }
+  @media (max-width: 992px) {
+    .spr__listingsHeadline {
+      height: auto; } }
+  .spr__listingsHeadline .slick-track > div:not(.slick-current) {
+    visibility: hidden; }
+  .spr__listingsHeadline .slick-dots {
+    bottom: 25px; }
+    .spr__listingsHeadline .slick-dots li {
+      width: 15px; }
+
+.spr__listingsHeadlineWrap {
+  display: table !important; }
+  .spr__listingsHeadlineWrap > div {
+    display: table-cell;
+    vertical-align: middle; }
+
+.spr__listingsHeadlineTitle {
+  text-transform: uppercase;
+  font-size: 24px;
+  padding: 0 0 34px; }
+
+.spr__listingsHeadlineSubTitle {
+  font-size: 30px;
+  line-height: 47px; }
+  @media (max-width: 992px) {
+    .spr__listingsHeadlineSubTitle {
+      font-size: 24px;
+      padding: 0px 15px; } }
+
+.spr__listingsHeadlineReadMore {
+  font-size: 14px;
+  line-height: 19px;
+  padding: 26px 0 0; }
+  .spr__listingsHeadlineReadMore a {
+    color: #C2B49A;
+    text-decoration: underline; }
+
+.spr__listingsRevBox {
+  text-align: center;
+  background-color: #C2B49A;
+  height: 494px;
+  padding: 40px 30px;
+  color: #003255;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 28px; }
+  .spr__listingsRevBox .slick-track > div:not(.slick-current) {
+    visibility: hidden; }
+  .spr__listingsRevBox .slick-dots {
+    left: 0px;
+    bottom: 20px; }
+  @media (max-width: 640px) {
+    .spr__listingsRevBox .slick-list {
+      padding: 0px !important; } }
+
+.spr__listingsReviewMsg > div {
+  display: inline-block;
+  width: 49.65%;
+  height: 92vh;
+  float: left;
+  text-align: center;
+  font-weight: 500;
+  overflow: hidden;
+  margin-bottom: 3%; }
+  .spr__listingsReviewMsg > div:nth-child(2) {
+    overflow: auto; }
+  @media (max-width: 992px) {
+    .spr__listingsReviewMsg > div {
+      height: 90vh; } }
+  @media (max-width: 640px) {
+    .spr__listingsReviewMsg > div {
+      width: 100%;
+      height: auto; } }
+
+.spr__listingsReviewMsg > div:first-child {
+  margin: 0 0.7% 3% 0; }
+  @media (max-width: 640px) {
+    .spr__listingsReviewMsg > div:first-child {
+      margin: 0 0 1% 0; } }
+
+.spr__listingsRevImg span {
+  display: inline-block;
+  box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.14);
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 8px; }
+
+.spr__listingsRevImg span span {
+  display: block;
+  background-image: url(../images/murugaesan.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%; }
+
+.spr__listingsRevImg span, .spr__listingsRevImg img {
+  border-radius: 50%; }
+
+.spr__listingsRevImg {
+  margin-bottom: 42px; }
+
+.spr__listingsReviewerName {
+  margin: 25px 0 0;
+  font-weight: 600; }
+
+.spr__listingsMsgBox {
+  position: relative;
+  padding: 70px 60px 5%;
+  background-image: url(../images/ceo_speaks.jpg);
+  background-position: center;
+  background-size: cover; }
+  @media (max-width: 640px) {
+    .spr__listingsMsgBox {
+      padding: 50px 60px 60px; } }
+  .spr__listingsMsgBox label {
+    color: #ffffff;
+    font-weight: 300;
+    cursor: pointer; }
+
+.spr__listingsMsgBoxTitle {
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 36px; }
+
+.spr__listingsMsgBoxSubTitle {
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 28px;
+  max-height: 42vh;
+  overflow: hidden;
+  transition: all 0.3s ease; }
+  .spr__listingsMsgBoxSubTitle label {
+    font-weight: 300; }
+
+.spr__cityModalContentMain {
+  background-color: rgba(0, 0, 0, 0.45); }
+  .spr__cityModalContentMain .modal-dialog {
+    top: 25% !important; }
+    @media (max-width: 768px) {
+      .spr__cityModalContentMain .modal-dialog {
+        top: 5% !important; } }
+  .spr__cityModalContentMain .modal-content {
+    background-color: transparent;
+    box-shadow: none;
+    border: 0px; }
+  .spr__cityModalContentMain .modal-body {
+    max-height: 100% !important; }
+
+.spr__cityModalContentTitle {
+  font-size: 20px;
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-weight: 200; }
+  @media (max-width: 768px) {
+    .spr__cityModalContentTitle {
+      font-size: 17px;
+      text-align: center; } }
+
+.spr__cityModalImg {
+  width: 32%;
+  display: inline-block;
+  padding: 0 1% 5% 0;
+  text-decoration: none;
+  cursor: pointer; }
+  @media (max-width: 768px) {
+    .spr__cityModalImg {
+      display: block;
+      width: 45%;
+      margin: 0 auto; } }
+  .spr__cityModalImg > img {
+    display: block;
+    max-width: 100%; }
+
+.spr__cityModalImgDesc {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: #ffffff; }
+
+#readMoreCeo {
+  display: none; }
+  #readMoreCeo:checked + .spr__listingsMsgBoxSubTitle {
+    max-height: 100%; }

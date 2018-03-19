@@ -1,0 +1,296 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  margin: 30px; }
+  @media (max-width: 768px) {
+    body {
+      font-size: 12px;
+      margin: 0px; } }
+
+.spr__aboutMain {
+  overflow-x: hidden; }
+
+.spr__aboutBannerInner {
+  display: table;
+  width: 100%;
+  height: 35vh;
+  margin: 0 0 1%;
+  background-image: url(../images/aboutBanner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  @media (max-width: 640px) {
+    .spr__aboutBannerInner {
+      height: 70vh;
+      background-position: center;
+      background-position: right; } }
+
+.spr__aboutBannerTitle {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  padding: 0 50px;
+  color: #003255;
+  font-family: "Big_Caslon";
+  font-size: 48px;
+  font-weight: 500;
+  background-color: none; }
+  @media (max-width: 640px) {
+    .spr__aboutBannerTitle {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 500;
+      color: #ffffff;
+      background-color: rgba(0, 0, 0, 0.2); } }
+
+.spr__aboutPointsInner {
+  margin: 0 0 1%;
+  overflow: hidden; }
+
+.spr__aboutPointWrap {
+  display: inline-block;
+  width: 32.65%;
+  height: 70vh;
+  text-align: center;
+  padding: 20px;
+  float: left;
+  background-position: center;
+  background-size: cover; }
+  @media (max-width: 640px) {
+    .spr__aboutPointWrap {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 0 1%;
+      padding: 0px 20px 40px; } }
+  .spr__aboutPointWrap:nth-child(1) {
+    background-image: url(../images/visionBanner.jpg); }
+    .spr__aboutPointWrap:nth-child(1) .spr__aboutPointIcon img {
+      margin: 87px auto 36px; }
+      @media (max-width: 640px) {
+        .spr__aboutPointWrap:nth-child(1) .spr__aboutPointIcon img {
+          margin: 65px auto 16px; } }
+  .spr__aboutPointWrap:nth-child(2) {
+    background-image: url(../images/missionBanner.png);
+    margin: 0 1% 0; }
+    @media (max-width: 640px) {
+      .spr__aboutPointWrap:nth-child(2) {
+        margin: 0 0 1%; } }
+  .spr__aboutPointWrap:nth-child(3) {
+    background-image: url(../images/philosophyBanner.jpg); }
+
+.spr__aboutPointIcon img {
+  width: 15%;
+  margin: 70px auto 36px; }
+  @media (max-width: 640px) {
+    .spr__aboutPointIcon img {
+      margin: 48px auto 16px;
+      width: 100px; } }
+
+.spr__aboutPointTitle {
+  color: #FFFFFF;
+  font-size: 30px;
+  margin: 0 0 26px; }
+  @media (max-width: 640px) {
+    .spr__aboutPointTitle {
+      margin: 0 0 15px; } }
+
+.spr__aboutPointDesc {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 32px;
+  width: 77%;
+  margin: 0 auto; }
+  @media (max-width: 640px) {
+    .spr__aboutPointDesc {
+      width: 75%; } }
+
+.spr__aboutTimelineInner {
+  display: table;
+  background-color: #C2B49A;
+  width: 100%;
+  height: 50vh;
+  margin: 0 0 1%; }
+  @media (max-width: 640px) {
+    .spr__aboutTimelineInner {
+      height: 50vh; } }
+
+.spr__aboutTimelineTitle {
+  display: table-cell;
+  text-align: center;
+  color: #20505B;
+  font-size: 40px;
+  font-weight: 300;
+  vertical-align: middle; }
+
+.spr__aboutInWordsInner {
+  background-color: #003255;
+  color: #C2B49A;
+  text-align: center;
+  padding: 50px;
+  margin: 0 0 1%; }
+  @media (max-width: 640px) {
+    .spr__aboutInWordsInner {
+      padding: 42px 40px 59px; } }
+
+.spr__aboutInWordsTitle {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0 0 50px; }
+  @media (max-width: 640px) {
+    .spr__aboutInWordsTitle {
+      font-size: 36px;
+      margin: 0 0 38px; } }
+
+.spr__aboutInWordsSubTitle {
+  font-size: 16px;
+  line-height: 32px; }
+  @media (max-width: 640px) {
+    .spr__aboutInWordsSubTitle {
+      font-size: 13px; } }
+
+.spr__aboutTeamWrap {
+  width: auto; }
+  @media (min-width: 768px) {
+    .spr__aboutTeamWrap {
+      margin: 0 0 0 1.5%;
+      width: 99%; } }
+
+.spr__aboutTeamMem {
+  display: inline-block;
+  width: calc(100% / 5.39);
+  height: 33.2%;
+  min-width: 180px;
+  margin: 0 1% 1% 0;
+  overflow: hidden; }
+  @media (max-width: 640px) {
+    .spr__aboutTeamMem {
+      width: 48.6%;
+      min-width: 172px;
+      margin: 0; } }
+  @media (max-width: 380px) {
+    .spr__aboutTeamMem {
+      height: 30%; } }
+  @media (max-width: 355px) {
+    .spr__aboutTeamMem {
+      min-width: 155px; } }
+  @media (max-width: 640px) {
+    .spr__aboutTeamMem:nth-of-type(2n) {
+      margin: 0 0 0 1%; } }
+
+.spr__aboutTeamMemInner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .spr__aboutTeamMemInner:hover > div {
+    visibility: visible; }
+  .spr__aboutTeamMemInner:hover > div > .spr__aboutTeamMemName {
+    bottom: 0px;
+    visibility: visible; }
+
+.spr__aboutTeamMemNameWrap {
+  display: table-cell;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-size: 20px;
+  padding: 0 10px;
+  vertical-align: middle;
+  text-transform: capitalize;
+  transition: all 0.2s ease;
+  visibility: hidden; }
+  @media (max-width: 640px) {
+    .spr__aboutTeamMemNameWrap {
+      font-size: 14px; } }
+
+.spr__aboutTeamMemName {
+  position: relative;
+  bottom: -20px;
+  visibility: hidden;
+  transition: all 0.2s ease; }
+
+.spr__aboutTxtContainer {
+  position: relative;
+  float: right;
+  background-color: #C2B49A;
+  color: #003255;
+  padding: 30px;
+  text-align: left;
+  width: calc(100% / 2.61);
+  height: 69%;
+  min-width: 370px;
+  margin: 0 2% 0 0;
+  overflow: auto; }
+  @media (max-width: 640px) {
+    .spr__aboutTxtContainer {
+      width: 98%;
+      height: auto;
+      float: none;
+      padding: 21px 24px;
+      text-align: center;
+      margin: 0 1% 1%;
+      min-width: 335px;
+      font-size: 14px;
+      font-weight: 600; }
+      .spr__aboutTxtContainer ~ .spr__aboutTeamMem:nth-of-type(1n) {
+        margin: 0 0 0 1%; }
+      .spr__aboutTxtContainer ~ .spr__aboutTeamMem:nth-of-type(2n) {
+        margin: 0; } }
+  @media (max-width: 768px) and (min-width: 641px) {
+    .spr__aboutTxtContainer {
+      min-width: 364px; } }
+
+.spr__aboutTxtContainerName {
+  color: #003255;
+  font-size: 36px;
+  font-weight: 300;
+  margin: 0 0 20px; }
+  @media (max-width: 640px) {
+    .spr__aboutTxtContainerName {
+      margin: 0 0 2px; } }
+
+.spr__aboutTxtContainerDesc {
+  padding: 0 25px; }
+
+.spr__aboutTxtContainerDesg {
+  color: #003255;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 18px; }
+
+.titleTile {
+  display: table;
+  font-size: 28px;
+  font-weight: 300;
+  background-image: none; }
+  @media (max-width: 992px) {
+    .titleTile {
+      font-size: 16px; } }
+
+.titleTile1 {
+  background-color: #003255;
+  color: #C2B49A; }
+
+.titleTile2 {
+  background-color: #C2B49A;
+  color: #003255; }
+
+.titleTileTxt {
+  text-transform: uppercase;
+  display: table-cell;
+  vertical-align: middle; }
+
+@media (max-width: 640px) {
+  .titleTileMainMob, .titleTileMainMob2 {
+    display: none; } }
+
+@media (max-width: 640px) {
+  .titleTileMainMob2 ~ .spr__aboutTeamMem:nth-of-type(1n) {
+    margin: 0; }
+  .titleTileMainMob2 ~ .spr__aboutTeamMem:nth-of-type(2n) {
+    margin: 0 0 0 1%; } }
