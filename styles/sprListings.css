@@ -34,7 +34,8 @@ a:hover {
       height: 80vh; } }
 
 .spr__listingsContain {
-  overflow: auto; }
+  overflow: auto;
+  overflow-x: hidden; }
 
 .spr__listingsItemPremiumDescWrap {
   display: table-cell;
