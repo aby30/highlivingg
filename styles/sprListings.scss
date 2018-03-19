@@ -45,6 +45,7 @@ a:hover {
   }
   &__listingsContain {
     overflow: auto;
+    overflow-x: hidden;
   }
   &__listingsItemPremiumDescWrap {
     display: table-cell;
