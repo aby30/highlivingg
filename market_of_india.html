@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet"/>
-    <link rel="stylesheet" href="../styles/sprPropertyPage.css"/>
-    <link rel="stylesheet" href="../styles/headerFooter.css"/>
-    <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+    <link rel="stylesheet" href="styles/sprPropertyPage.css"/>
+    <link rel="stylesheet" href="styles/headerFooter.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../slick/slick.min.js"></script>
-    <script type="text/javascript" src="../js/commonScripts.js"></script>
-    <script type="text/javascript" src="../js/carouselsInit.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/commonScripts.js"></script>
+    <script type="text/javascript" src="js/carouselsInit.js"></script>
     <style>
       .spr__headerInner {
         background-color: #003E21;
@@ -69,7 +69,7 @@
         var mapCanvas = document.getElementById("propertyOnMap");
         var mapOptions = {center: myCenter, zoom: 15};
         var map = new google.maps.Map(mapCanvas, mapOptions);
-        var marker = new google.maps.Marker({position:myCenter, icon: '../images/markerSPR_generic.png'});
+        var marker = new google.maps.Marker({position:myCenter, icon: 'images/markerSPR_generic.png'});
         marker.setMap(map);
       }
 
@@ -77,7 +77,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Vy93QoP2Dhof9JiX6ygj-fW_YovzVQ8&amp;callback=showSprOnMap" async="async"></script>
   </head>
   <body>
-    <a href="javascript:" id="return-to-top" onclick="scrollToTop();"><img src="../images/upArrow.svg" alt="upArrow"></a>
+    <a href="javascript:" id="return-to-top" onclick="scrollToTop();"><img src="images/upArrow.svg" alt="upArrow"></a>
     <!--header Inculde-->
     <div class="spr__headerMain">
       <div class="spr__headerInner">
@@ -85,16 +85,16 @@
           <div class="spr__mobGalleryBackInner"><span class="icon-bar"></span><span class="icon-bar"></span></div>
         </label>
         <ul class="spr__headerLinksList">
-          <li class="spr__headerLink"><a href="../index.html">Projects</a></li>
+          <li class="spr__headerLink"><a href="index.html">Projects</a></li>
           <li class="spr__headerLink"><a>blog</a></li>
         </ul>
         <input class="mobMenuCheck" type="checkbox" id="mobMenuOpen"/>
         <div class="spr__headerIconWrap">
-          <div class="spr__headerIconWrapInner"><img class="img-responsive non-landing-pages" src="../images/SPRlogo.png"/></div>
+          <div class="spr__headerIconWrapInner"><img class="img-responsive non-landing-pages" src="images/SPRlogo.png"/></div>
         </div>
         <ul class="spr__headerLinksList">
-          <li class="spr__headerLink"><a href="../about.html">about</a></li>
-          <li class="spr__headerLink"><a href="../sovereign.html">Sovereign</a></li>
+          <li class="spr__headerLink"><a href="about.html">about</a></li>
+          <li class="spr__headerLink"><a href="sovereign.html">Sovereign</a></li>
         </ul>
         <label class="spr__menuMobTrig" for="mobMenuOpen" onclick="checkMobMenu()">
           <div class="spr__menuMobTrigInner"><span class="icon-bar chlorophyll"></span><span class="icon-bar chlorophyll"></span><span class="icon-bar chlorophyll"></span></div>
@@ -102,7 +102,7 @@
         <div class="spr__menuMobWrap">
           <div class="spr__menuMobInner">
             <ul class="spr__menuMobList">
-              <li><a href="../about.html">About</a>
+              <li><a href="about.html">About</a>
                 <hr class="mobMenuSeperator"/>
               </li>
               <li>
@@ -131,7 +131,7 @@
               <li><a href="">Blog</a>
                 <hr class="mobMenuSeperator"/>
               </li>
-              <li><a href="../sovereign.html">Sovereign</a>
+              <li><a href="sovereign.html">Sovereign</a>
                 <hr class="mobMenuSeperator"/>
               </li>
             </ul>
@@ -238,25 +238,25 @@
             <!-- <div class="spr__propertyAmenities" id="propertyAmenities">
 
                 <span class="spr__propertyAmenityWrap">
-                    <div class="spr__propertyAmenity" style="background-image: url('../images/projects/osian_one/web/amenities/cleaning.jpg')">
+                    <div class="spr__propertyAmenity" style="background-image: url('images/projects/osian_one/web/amenities/cleaning.jpg')">
                         <div class="spr__propertyAmenityName">Cleaning</div>
                     </div>
                 </span>
 
                 <span class="spr__propertyAmenityWrap">
-                    <div class="spr__propertyAmenity" style="background-image: url('../images/projects/osian_one/web/amenities/indoor_games.jpg')">
+                    <div class="spr__propertyAmenity" style="background-image: url('images/projects/osian_one/web/amenities/indoor_games.jpg')">
                         <div class="spr__propertyAmenityName">Indoor games</div>
                     </div>
                 </span>
 
                 <span class="spr__propertyAmenityWrap">
-                    <div class="spr__propertyAmenity" style="background-image: url('../images/projects/osian_one/web/amenities/mini_theater.jpg')">
+                    <div class="spr__propertyAmenity" style="background-image: url('images/projects/osian_one/web/amenities/mini_theater.jpg')">
                         <div class="spr__propertyAmenityName">Mini theater</div>
                     </div>
                 </span>
 
                 <span class="spr__propertyAmenityWrap">
-                <div class="spr__propertyAmenity" style="background-image: url('../images/projects/osian_one/web/amenities/playarea.jpg')">
+                <div class="spr__propertyAmenity" style="background-image: url('images/projects/osian_one/web/amenities/playarea.jpg')">
                   <div class="spr__propertyAmenityName">Infinity pool</div>
                 </div></span><span class="spr__propertyAmenityWrap spr__propertyAmenityMore">
                 <div class="spr__propertyAmenity">
@@ -268,12 +268,12 @@
 
 
                     <span class="spr__propertyAmenityWrap">
-                      <div class="spr__propertyAmenity" style="background-image: url('../images/projects/osian_one/web/amenities/steam.jpg')">
+                      <div class="spr__propertyAmenity" style="background-image: url('images/projects/osian_one/web/amenities/steam.jpg')">
                         <div class="spr__propertyAmenityName">Steam</div>
                       </div>
                     </span>
                     <span class="spr__propertyAmenityWrap">
-                      <div class="spr__propertyAmenity" style="background-image: url('../images/projects/osian_one/web/amenities/yoga.jpg')">
+                      <div class="spr__propertyAmenity" style="background-image: url('images/projects/osian_one/web/amenities/yoga.jpg')">
                         <div class="spr__propertyAmenityName">Yoga</div>
                       </div>
                     </span>
@@ -333,39 +333,39 @@
             <div class="spr__propertyGallery" id="propertyGallery">
               <div class="spr__propertyGalleryInner">
                 <div class="spr__propertyGalleryMob">
-                  <div class="spr__propertyGalleryImg"><img class="img-responsive" src="../images/projects/MOI/web/gallery/1.jpg"/></div>
-                  <div class="spr__propertyGalleryImg"><img class="img-responsive" src="../images/projects/MOI/web/gallery/2.jpg"/></div>
+                  <div class="spr__propertyGalleryImg"><img class="img-responsive" src="images/projects/MOI/web/gallery/1.jpg"/></div>
+                  <div class="spr__propertyGalleryImg"><img class="img-responsive" src="images/projects/MOI/web/gallery/2.jpg"/></div>
                   <div class="spr__propertyGalleryMobMore">
                     <label class="spr__propertyGalleryMobTrig" for="propertyGalleryMobTrig" onclick="checkMobGallery()">View all</label>
                     <input type="checkbox" id="propertyGalleryMobTrig"/>
                     <div class="spr__propertyGalleryMobWrap">
                       <div class="spr__propertyGalleryMobInner">
-                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="../images/projects/MOI/web/gallery/3.jpg"/></div>
-                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="../images/projects/MOI/web/gallery/4.jpg"/></div>
-                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="../images/projects/MOI/web/gallery/5.jpg"/></div>
-                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="../images/projects/MOI/web/gallery/6.jpg"/></div>
+                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="images/projects/MOI/web/gallery/3.jpg"/></div>
+                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="images/projects/MOI/web/gallery/4.jpg"/></div>
+                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="images/projects/MOI/web/gallery/5.jpg"/></div>
+                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="images/projects/MOI/web/gallery/6.jpg"/></div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="spr__propertyGalleryCarousel">
                   <ul class="slickslide">
-                    <li><img src="../images/projects/MOI/web/gallery/1.jpg" title="img2" alt="gallery1"/>
+                    <li><img src="images/projects/MOI/web/gallery/1.jpg" title="img2" alt="gallery1"/>
                       <div class="imageCaption">Gallery 1</div>
                     </li>
-                    <li><img src="../images/projects/MOI/web/gallery/2.jpg" title="img" alt="gallery2"/>
+                    <li><img src="images/projects/MOI/web/gallery/2.jpg" title="img" alt="gallery2"/>
                       <div class="imageCaption">Gallery 2</div>
                     </li>
-                    <li><img src="../images/projects/MOI/web/gallery/3.jpg" title="img" alt="gallery3"/>
+                    <li><img src="images/projects/MOI/web/gallery/3.jpg" title="img" alt="gallery3"/>
                       <div class="imageCaption">Gallery 3</div>
                     </li>
-                    <li><img src="../images/projects/MOI/web/gallery/4.jpg" title="img" alt="gallery4"/>
+                    <li><img src="images/projects/MOI/web/gallery/4.jpg" title="img" alt="gallery4"/>
                       <div class="imageCaption">Gallery 4</div>
                     </li>
-                    <li><img src="../images/projects/MOI/web/gallery/5.jpg" title="img" alt="gallery5"/>
+                    <li><img src="images/projects/MOI/web/gallery/5.jpg" title="img" alt="gallery5"/>
                       <div class="imageCaption">Gallery 5</div>
                     </li>
-                    <li><img src="../images/projects/MOI/web/gallery/6.jpg" title="img" alt="gallery6"/>
+                    <li><img src="images/projects/MOI/web/gallery/6.jpg" title="img" alt="gallery6"/>
                       <div class="imageCaption">Gallery 6</div>
                     </li>
                   </ul>
@@ -375,12 +375,12 @@
                     <li><img src="https://unsplash.it/160/160?image=113"/></li>
 -->
 
-                    <li><img src="../images/projects/MOI/web/gallery/1.jpg"/></li>
-                    <li><img src="../images/projects/MOI/web/gallery/2.jpg"/></li>
-                    <li><img src="../images/projects/MOI/web/gallery/3.jpg"/></li>
-                    <li><img src="../images/projects/MOI/web/gallery/4.jpg"/></li>
-                    <li><img src="../images/projects/MOI/web/gallery/5.jpg"/></li>
-                    <li><img src="../images/projects/MOI/web/gallery/6.jpg"/></li>
+                    <li><img src="images/projects/MOI/web/gallery/1.jpg"/></li>
+                    <li><img src="images/projects/MOI/web/gallery/2.jpg"/></li>
+                    <li><img src="images/projects/MOI/web/gallery/3.jpg"/></li>
+                    <li><img src="images/projects/MOI/web/gallery/4.jpg"/></li>
+                    <li><img src="images/projects/MOI/web/gallery/5.jpg"/></li>
+                    <li><img src="images/projects/MOI/web/gallery/6.jpg"/></li>
                   </ul>
                 </div>
               </div>
@@ -423,7 +423,7 @@
     <div class="spr__footerMain">
       <div class="spr__footerInner">
         <div class="spr__footerIconWrap">
-          <div class="spr__footerIcon"><img class="img-responsive" src="../images/logoDark.svg"/></div>
+          <div class="spr__footerIcon"><img class="img-responsive" src="images/logoDark.svg"/></div>
         </div>
         <div class="spr__footerLinksWrap">
 
@@ -484,8 +484,8 @@
             <input class="spr__footerLinksSetCheckbox" type="checkbox" id="set1"/>
             <div class="spr__footerLinksSetListWrap">
               <ul class="spr__footerLinksSetList">
-                <li><a href="../contact.html">Contact</a></li>
-                <li><a href="../about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
               </ul>
             </div>
           </div>
