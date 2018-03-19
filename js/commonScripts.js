@@ -276,8 +276,8 @@ document.addEventListener("scroll", fixHeader);
 
 function fixHeader() {
   //spr__propertyDetailsStripList
-  if (window.location.pathname != '/index' && window.location.pathname != '/about' && window.location.pathname != '/contact' && window.location.pathname != '/sovereign') {
-    console.log(window.location.pathname);
+  if (window.location.pathname != '/highlivingg/index.html' && window.location.pathname != '/highlivingg/about.html' && window.location.pathname != '/highlivingg/contact.html' && window.location.pathname != '/highlivingg/sovereign.html') {
+    // console.log(window.location.pathname);
     var scrollTop = $(window).scrollTop(),
     elementOffset = $('.spr__propertyDetailsStripListWrap').offset().top,
     distance = (elementOffset - scrollTop);
