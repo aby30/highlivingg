@@ -1,21 +1,21 @@
 
 <html>
   <head>
-    <title>Codename City</title>
+    <title>Osian One</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet"/>
-    <link rel="stylesheet" href="styles/sprPropertyPage.css"/>
-    <link rel="stylesheet" href="styles/headerFooter.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="../styles/sprPropertyPage.css"/>
+    <link rel="stylesheet" href="../styles/headerFooter.css"/>
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/commonScripts.js"></script>
-    <script type="text/javascript" src="js/carouselsInit.js"></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
+    <script type="text/javascript" src="../js/commonScripts.js"></script>
+    <script type="text/javascript" src="../js/carouselsInit.js"></script>
     <style>
       .spr__headerInner {
         background-color: #003E21;
@@ -57,11 +57,11 @@
         //- };
         //- var map=new google.maps.Map(document.getElementById("SprOnMap"),mapProp);
 
-        var myCenter = new google.maps.LatLng(13.10083295, 80.25351495);
+        var myCenter = new google.maps.LatLng(13.08271269, 80.26242524);
         var mapCanvas = document.getElementById("propertyOnMap");
         var mapOptions = {center: myCenter, zoom: 15};
         var map = new google.maps.Map(mapCanvas, mapOptions);
-        var marker = new google.maps.Marker({position:myCenter, icon: 'images/markerSPR_generic.png'});
+        var marker = new google.maps.Marker({position:myCenter, icon: '../images/markerSPR_generic.png'});
         marker.setMap(map);
       }
 
@@ -69,7 +69,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Vy93QoP2Dhof9JiX6ygj-fW_YovzVQ8&amp;callback=showSprOnMap" async="async"></script>
   </head>
   <body>
-    <a href="javascript:" id="return-to-top" onclick="scrollToTop();"><img src="images/upArrow.svg" alt="upArrow"></a>
+    <a href="javascript:" id="return-to-top" onclick="scrollToTop();"><img src="../images/upArrow.svg" alt="upArrow"></a>
     <!--header Inculde-->
     <div class="spr__headerMain">
       <div class="spr__headerInner">
@@ -77,16 +77,16 @@
           <div class="spr__mobGalleryBackInner"><span class="icon-bar"></span><span class="icon-bar"></span></div>
         </label>
         <ul class="spr__headerLinksList">
-          <li class="spr__headerLink"><a href="index.html">Projects</a></li>
+          <li class="spr__headerLink"><a href="../index.html">Projects</a></li>
           <li class="spr__headerLink"><a>blog</a></li>
         </ul>
         <input class="mobMenuCheck" type="checkbox" id="mobMenuOpen"/>
         <div class="spr__headerIconWrap">
-          <div class="spr__headerIconWrapInner"><img class="img-responsive non-landing-pages" src="images/SPRlogo.png"/></div>
+          <div class="spr__headerIconWrapInner"><img class="img-responsive non-landing-pages" src="../images/SPRlogo.png"/></div>
         </div>
         <ul class="spr__headerLinksList">
-          <li class="spr__headerLink"><a href="about.html">about</a></li>
-          <li class="spr__headerLink"><a href="sovereign.html">Sovereign</a></li>
+          <li class="spr__headerLink"><a href="../about.html">about</a></li>
+          <li class="spr__headerLink"><a href="../sovereign.html">Sovereign</a></li>
         </ul>
         <label class="spr__menuMobTrig" for="mobMenuOpen" onclick="checkMobMenu()">
           <div class="spr__menuMobTrigInner"><span class="icon-bar chlorophyll"></span><span class="icon-bar chlorophyll"></span><span class="icon-bar chlorophyll"></span></div>
@@ -94,7 +94,7 @@
         <div class="spr__menuMobWrap">
           <div class="spr__menuMobInner">
             <ul class="spr__menuMobList">
-              <li><a href="about.html">About</a>
+              <li><a href="../about.html">About</a>
                 <hr class="mobMenuSeperator"/>
               </li>
               <li>
@@ -123,7 +123,7 @@
               <li><a href="">Blog</a>
                 <hr class="mobMenuSeperator"/>
               </li>
-              <li><a href="sovereign.html">Sovereign</a>
+              <li><a href="../sovereign.html">Sovereign</a>
                 <hr class="mobMenuSeperator"/>
               </li>
             </ul>
@@ -133,10 +133,10 @@
     </div>
     <div class="spr__propertyMain">
       <div class="spr__propertyInner">
-        <div class="spr__propertyBanner city">
+        <div class="spr__propertyBanner osian_one">
           <div class="spr__propertyBannerText">
-            <div class="spr__propertyBannerTitle">CODENAME CITY</div>
-            <div class="spr__propertyBannerSubTitle">Scaling heights, changing skylines</div>
+            <div class="spr__propertyBannerTitle">OSIAN ONE</div>
+            <div class="spr__propertyBannerSubTitle">To bring Oneness within</div>
           </div>
         </div>
         <div class="spr__propertyDetailsStripListWrap">
@@ -159,31 +159,41 @@
             <div class="spr__propertyAboutKeyDesc">
               <div class="spr__propertyAboutKeyPts" id="propertyAboutKeyPts"><span class="spr__propertyKeyPt">
                   <div class="spr__propertyKeyPtTitle">Location</div>
-                  <div class="spr__propertyKeyPtDesc">Perambur
+                  <div class="spr__propertyKeyPtDesc">Vepery
                   <div class="spr__propertyKeyPtOther">Chennai</div></div>
                   </span><span class="spr__propertyKeyPt">
                   <div class="spr__propertyKeyPtTitle">Development Area</div>
-                  <div class="spr__propertyKeyPtDesc">18
+                  <div class="spr__propertyKeyPtDesc">1
                     <div class="spr__propertyKeyPtOther">Acres</div>
                   </div></span><span class="spr__propertyKeyPt">
                   <div class="spr__propertyKeyPtTitle">Towers</div>
-                  <div class="spr__propertyKeyPtDesc">3</div></span><span class="spr__propertyKeyPt">
+                  <div class="spr__propertyKeyPtDesc">1</div></span><span class="spr__propertyKeyPt">
                   <div class="spr__propertyKeyPtTitle">Floor</div>
-                  <div class="spr__propertyKeyPtDesc">G + 45
+                  <div class="spr__propertyKeyPtDesc">G + 19
                     <div class="spr__propertyKeyPtOther">Floors</div>
                   </div></span><span class="spr__propertyKeyPt">
                   <div class="spr__propertyKeyPtTitle">Total Units</div>
-                  <div class="spr__propertyKeyPtDesc">612
+                  <div class="spr__propertyKeyPtDesc">45
                     <div class="spr__propertyKeyPtOther">units</div>
                   </div></span><span class="spr__propertyKeyPt">
                   <div class="spr__propertyKeyPtTitle">Apartment Variations</div>
                   <div class="spr__propertyKeyPtDesc">
-                    <div class="spr__propertyKeyPtOther" style="font-size: 20px;margin-top: -10px;padding: 0px;font-weight: 600;">2 / 3 / 4 BHK</div>
+                    <div class="spr__propertyKeyPtOther" style="font-size: 20px;margin-top: -10px;padding: 0px;font-weight: 600;">3.5 / 4 / 5 BHK</div>
                   </div></span></div>
               <div class="spr__propertyAboutDesc">
                 <div class="spr__propertyAboutDescTitle">About the Project</div>
                 <div class="spr__propertyAboutDescDetails">
-                  <p>CODENAME City will be the new age township and a benchmark for any future project and also has the privilege of having the tallest residential tower in Chennai. In recent times, the Indian homes are built using traditional norms and architectural designs. Let it be apartments or individual houses, they have gone through numerous changes in their fundamental structure. These architectures are an inspiration and can be largely seen in CODENAME City.<br /><br />Each unit is planned in such a way they reflect the Indian architecture in its flooring, painting, doors, joinery, etc. With well ventilated living area and spacious room, you can also find detailing such as ‘Thinnai’ – sitting areas outside the house, and ‘Mutram’ – inner veranda with ample light from roof will be part of the architecture.</p>
+                  <p>The name says it all and it is definitely a one of a kind project. Based on the three pillars of life: BODY MIND and SOUL, we realised why our living spaces should be any different. Osian One is the brain child of this realisation. It is uniquely energised to help find the peace and harmony you deserve. Situated in a prime location in Central Chennai, it is easily connected to Rail and Road networks.<br /><br />
+                  <b>The Body</b><br>
+                  Body is the physical presence of a living soul. For many, body is the container that stores these energies and helps drive one’s life. It is this physical entity that determines the span of a being and during this course of time, it is our responsibility to take care of this container we call our body. Your body deserves the pampering of a king. To ensure you get the best of facilities, we have a wide variety of features and amenities that will take care of your need so your body can rest.
+                  <br><br>
+                  <b>The Mind</b><br>
+                  “The Mind is its own place, and in itself can make a heaven of hell, or a hell of heaven….” this immortal passage from Milton’s Paradise Lost encapsulates how our state of mind can have influence on our state of being. It is therefore imperative that we ensure the mind finds the same relaxation and energy as the body. For this very purpose, we have concierge services to take care of your everyday needs so your mind can be at peace.
+                  <br><br>
+                  <b>The Soul</b><br>
+                  If your body is a vessel, your soul is the content in it. Your soul's true nature will at all time reflect on the person’s character. But the external factors can sometimes disturb the peace that the soul holds. It is therefore very important to live in a calm and peaceful environment that wouldn’t hinder your presence. Many believe that the souls would go back to heaven one day. But why not bring the heaven down for the souls to live on earth. At Osian One, we have created a heaven for your Mind, Body and Soul.
+                  <br><br>
+                  </p>
                 </div>
               </div>
             </div>
@@ -191,31 +201,31 @@
             <input type="checkbox" id="propertyAmenitiesMob"/>
             <div class="spr__propertyAmenities" id="propertyAmenitiesMobStr"><span class="spr__propertyAmenityWrap">
                 <div class="spr__propertyAmenity">
-                  <div class="spr__propertyAmenityName">Football</div>
+                  <div class="spr__propertyAmenityName">Cleaning</div>
                 </div></span><span class="spr__propertyAmenityWrap">
                 <div class="spr__propertyAmenity">
-                  <div class="spr__propertyAmenityName">Indoor games</div>
-                </div></span><span class="spr__propertyAmenityWrap">
-                <div class="spr__propertyAmenity">
-                  <div class="spr__propertyAmenityName">Library</div>
+                  <div class="spr__propertyAmenityName">Indoor Games</div>
                 </div></span><span class="spr__propertyAmenityWrap">
                 <div class="spr__propertyAmenity">
                   <div class="spr__propertyAmenityName">Mini Theater</div>
                 </div></span><span class="spr__propertyAmenityWrap">
                 <div class="spr__propertyAmenity">
-                  <label class="spr__propertyAmenityName" for="moreAminitiesMob">2 More Amenities</label>
+                  <div class="spr__propertyAmenityName">Infinity Pool</div>
+                </div></span><span class="spr__propertyAmenityWrap">
+                <div class="spr__propertyAmenity">
+                  <label class="spr__propertyAmenityName" for="moreAminitiesMob">24 More Amenities</label>
                 </div></span>
               <input class="moreAminitiesCbox" type="checkbox" id="moreAminitiesMob"/>
               <div class="spr__propertyMoreAmenityWrap">
                 <div class="spr__propertyMoreAmenityInner">
                   <span class="spr__propertyAmenityWrap">
                     <div class="spr__propertyAmenity">
-                      <div class="spr__propertyAmenityName">Spa</div>
+                      <div class="spr__propertyAmenityName">Steam</div>
                     </div>
                   </span>
                   <span class="spr__propertyAmenityWrap">
                     <div class="spr__propertyAmenity">
-                      <div class="spr__propertyAmenityName">Swimming Pool</div>
+                      <div class="spr__propertyAmenityName">Yoga</div>
                     </div>
                   </span>
                   </div>
@@ -224,51 +234,49 @@
             <div class="spr__propertyAmenities" id="propertyAmenities">
 
                 <span class="spr__propertyAmenityWrap">
-                    <div class="spr__propertyAmenity" style="background-image: url('images/projects/CITY/web/amenities/footbal.jpg')">
-                        <div class="spr__propertyAmenityName">Football</div>
+                    <div class="spr__propertyAmenity" style="background-image: url('../images/projects/osian_one/web/amenities/cleaning.jpg')">
+                        <div class="spr__propertyAmenityName">Cleaning</div>
                     </div>
                 </span>
 
                 <span class="spr__propertyAmenityWrap">
-                    <div class="spr__propertyAmenity" style="background-image: url('images/projects/CITY/web/amenities/Indoor%20games-01.jpg')">
+                    <div class="spr__propertyAmenity" style="background-image: url('../images/projects/osian_one/web/amenities/indoor_games.jpg')">
                         <div class="spr__propertyAmenityName">Indoor games</div>
                     </div>
                 </span>
 
                 <span class="spr__propertyAmenityWrap">
-                    <div class="spr__propertyAmenity" style="background-image: url('images/projects/CITY/web/amenities/Library-01.jpg')">
-                        <div class="spr__propertyAmenityName">Library</div>
+                    <div class="spr__propertyAmenity" style="background-image: url('../images/projects/osian_one/web/amenities/mini_theater.jpg')">
+                        <div class="spr__propertyAmenityName">Mini theater</div>
                     </div>
                 </span>
 
                 <span class="spr__propertyAmenityWrap">
-                    <div class="spr__propertyAmenity" style="background-image: url('images/projects/CITY/web/amenities/Mini%20Theater-01.jpg')">
-                        <div class="spr__propertyAmenityName">Mini Theater</div>
-                    </div>
-                </span>
-
-                <span class="spr__propertyAmenityWrap spr__propertyAmenityMore">
-                  <div class="spr__propertyAmenity">
-                    <label class="spr__propertyAmenityName" for="moreAminities">2 More Amenities</label>
-                  </div>
-                </span>
+                <div class="spr__propertyAmenity" style="background-image: url('../images/projects/osian_one/web/amenities/playarea.jpg')">
+                  <div class="spr__propertyAmenityName">Infinity pool</div>
+                </div></span><span class="spr__propertyAmenityWrap spr__propertyAmenityMore">
+                <div class="spr__propertyAmenity">
+                  <label class="spr__propertyAmenityName" for="moreAminities">2 More Amenities</label>
+                </div></span>
               <input class="moreAminitiesCbox" type="checkbox" id="moreAminities"/>
               <div class="spr__propertyMoreAmenityWrap">
                 <div class="spr__propertyMoreAmenityInner">
 
 
                     <span class="spr__propertyAmenityWrap">
-                    <div class="spr__propertyAmenity" style="background-image: url('images/projects/CITY/web/amenities/Spa-01.jpg')">
-                      <div class="spr__propertyAmenityName">Spa</div>
-                    </div></span>
+                      <div class="spr__propertyAmenity" style="background-image: url('../images/projects/osian_one/web/amenities/steam.jpg')">
+                        <div class="spr__propertyAmenityName">Steam</div>
+                      </div>
+                    </span>
                     <span class="spr__propertyAmenityWrap">
-                    <div class="spr__propertyAmenity" style="background-image: url('images/projects/CITY/web/amenities/Swimming%20pool-01.jpg')">
-                      <div class="spr__propertyAmenityName">Swimming Pool</div>
-                    </div></span>
-                </div>
+                      <div class="spr__propertyAmenity" style="background-image: url('../images/projects/osian_one/web/amenities/yoga.jpg')">
+                        <div class="spr__propertyAmenityName">Yoga</div>
+                      </div>
+                    </span>
+                  </div>
               </div>
             </div>
-            <!-- <label class="spr__mobileLabelPropertyKeyPts" for="propertyPlanPriceMobLabel">plan & price</label> -->
+            <label class="spr__mobileLabelPropertyKeyPts" for="propertyPlanPriceMobLabel">plan & price</label>
             <input type="checkbox" id="propertyPlanPriceMobLabel"/>
             <div class="spr__propertyPricePlan" id="propertyPricePlan" style="display: none">
               <div class="spr__propertyPricePlanListWrap">
@@ -321,28 +329,28 @@
             <div class="spr__propertyGallery" id="propertyGallery">
               <div class="spr__propertyGalleryInner">
                 <div class="spr__propertyGalleryMob">
-                  <div class="spr__propertyGalleryImg"><img class="img-responsive" src="images/projects/CITY/web/GALLERY/city%20gallery.jpg"/></div>
-                  <div class="spr__propertyGalleryImg"><img class="img-responsive" src="images/projects/CITY/web/GALLERY/city%20night%20view.jpg"/></div>
-                  <!-- <div class="spr__propertyGalleryMobMore">
+                  <div class="spr__propertyGalleryImg"><img class="img-responsive" src="../images/projects/osian_one/web/gallery/gal_1.jpg"/></div>
+                  <div class="spr__propertyGalleryImg"><img class="img-responsive" src="../images/projects/osian_one/web/gallery/gal_2.jpg"/></div>
+                  <div class="spr__propertyGalleryMobMore">
                     <label class="spr__propertyGalleryMobTrig" for="propertyGalleryMobTrig" onclick="checkMobGallery()">View all</label>
                     <input type="checkbox" id="propertyGalleryMobTrig"/>
                     <div class="spr__propertyGalleryMobWrap">
                       <div class="spr__propertyGalleryMobInner">
-                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="images/projects/chlorophyll/web/gallery/gal_3.jpg"/></div>
-                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="images/projects/chlorophyll/web/gallery/gal_4.jpg"/></div>
-                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="images/projects/chlorophyll/web/gallery/gal_5.jpg"/></div>
-                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="images/projects/chlorophyll/web/gallery/bedroom.jpg"/></div>
+                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="../images/projects/osian_one/web/gallery/gal_3.jpg"/></div>
                       </div>
                     </div>
-                  </div> -->
+                  </div>
                 </div>
                 <div class="spr__propertyGalleryCarousel">
                   <ul class="slickslide">
-                    <li><img src="images/projects/CITY/web/GALLERY/city%20gallery.jpg" title="img" alt="img"/>
-                      <div class="imageCaption">City Gallery</div>
+                    <li><img src="../images/projects/osian_one/web/gallery/gal_1.jpg" title="img2" alt="img2"/>
+                      <div class="imageCaption">Gallery 1</div>
                     </li>
-                    <li><img src="images/projects/CITY/web/GALLERY/city%20night%20view.jpg" title="img2" alt="img2"/>
-                      <div class="imageCaption">Night View</div>
+                    <li><img src="../images/projects/osian_one/web/gallery/gal_2.jpg" title="img" alt="img"/>
+                      <div class="imageCaption">Gallery 2</div>
+                    </li>
+                    <li><img src="../images/projects/osian_one/web/gallery/gal_3.jpg" title="img" alt="img"/>
+                      <div class="imageCaption">Gallery 3</div>
                     </li>
                   </ul>
                   <ul class="slick-thumbs">
@@ -350,8 +358,10 @@
                     <li><img src="https://unsplash.it/160/160?image=112"/></li>
                     <li><img src="https://unsplash.it/160/160?image=113"/></li>
 -->
-                    <li><img src="images/projects/CITY/web/GALLERY/city%20gallery.jpg"/></li>
-                    <li><img src="images/projects/CITY/web/GALLERY/city%20night%20view.jpg"/></li>
+
+                    <li><img src="../images/projects/osian_one/web/gallery/gal_1.jpg"/></li>
+                    <li><img src="../images/projects/osian_one/web/gallery/gal_2.jpg"/></li>
+                    <li><img src="../images/projects/osian_one/web/gallery/gal_3.jpg"/></li>
                   </ul>
                 </div>
               </div>
@@ -394,7 +404,7 @@
     <div class="spr__footerMain">
       <div class="spr__footerInner">
         <div class="spr__footerIconWrap">
-          <div class="spr__footerIcon"><img class="img-responsive" src="images/logoDark.svg"/></div>
+          <div class="spr__footerIcon"><img class="img-responsive" src="../images/logoDark.svg"/></div>
         </div>
         <div class="spr__footerLinksWrap">
 
@@ -455,8 +465,8 @@
             <input class="spr__footerLinksSetCheckbox" type="checkbox" id="set1"/>
             <div class="spr__footerLinksSetListWrap">
               <ul class="spr__footerLinksSetList">
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../about.html">About</a></li>
               </ul>
             </div>
           </div>

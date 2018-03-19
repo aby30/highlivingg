@@ -1,21 +1,21 @@
 
 <html>
   <head>
-    <title>Codename City</title>
+    <title>Osian Heights</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet"/>
-    <link rel="stylesheet" href="styles/sprPropertyPage.css"/>
-    <link rel="stylesheet" href="styles/headerFooter.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="../styles/sprPropertyPage.css"/>
+    <link rel="stylesheet" href="../styles/headerFooter.css"/>
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/commonScripts.js"></script>
-    <script type="text/javascript" src="js/carouselsInit.js"></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
+    <script type="text/javascript" src="../js/commonScripts.js"></script>
+    <script type="text/javascript" src="../js/carouselsInit.js"></script>
     <style>
       .spr__headerInner {
         background-color: #003E21;
@@ -57,11 +57,11 @@
         //- };
         //- var map=new google.maps.Map(document.getElementById("SprOnMap"),mapProp);
 
-        var myCenter = new google.maps.LatLng(13.10083295, 80.25351495);
+        var myCenter = new google.maps.LatLng(13.105569, 80.277493);
         var mapCanvas = document.getElementById("propertyOnMap");
         var mapOptions = {center: myCenter, zoom: 15};
         var map = new google.maps.Map(mapCanvas, mapOptions);
-        var marker = new google.maps.Marker({position:myCenter, icon: 'images/markerSPR_generic.png'});
+        var marker = new google.maps.Marker({position:myCenter, icon: 'images/markerSPR.png'});
         marker.setMap(map);
       }
 
@@ -69,7 +69,6 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Vy93QoP2Dhof9JiX6ygj-fW_YovzVQ8&amp;callback=showSprOnMap" async="async"></script>
   </head>
   <body>
-    <a href="javascript:" id="return-to-top" onclick="scrollToTop();"><img src="images/upArrow.svg" alt="upArrow"></a>
     <!--header Inculde-->
     <div class="spr__headerMain">
       <div class="spr__headerInner">
@@ -77,16 +76,16 @@
           <div class="spr__mobGalleryBackInner"><span class="icon-bar"></span><span class="icon-bar"></span></div>
         </label>
         <ul class="spr__headerLinksList">
-          <li class="spr__headerLink"><a href="index.html">Projects</a></li>
+          <li class="spr__headerLink"><a href="../index.html">Projects</a></li>
           <li class="spr__headerLink"><a>blog</a></li>
         </ul>
         <input class="mobMenuCheck" type="checkbox" id="mobMenuOpen"/>
         <div class="spr__headerIconWrap">
-          <div class="spr__headerIconWrapInner"><img class="img-responsive non-landing-pages" src="images/SPRlogo.png"/></div>
+          <div class="spr__headerIconWrapInner"><img class="img-responsive non-landing-pages" src="../images/SPRlogo.png"/></div>
         </div>
         <ul class="spr__headerLinksList">
-          <li class="spr__headerLink"><a href="about.html">about</a></li>
-          <li class="spr__headerLink"><a href="sovereign.html">Sovereign</a></li>
+          <li class="spr__headerLink"><a href="../about.html">about</a></li>
+          <li class="spr__headerLink"><a href="../sovereign.html">Sovereign</a></li>
         </ul>
         <label class="spr__menuMobTrig" for="mobMenuOpen" onclick="checkMobMenu()">
           <div class="spr__menuMobTrigInner"><span class="icon-bar chlorophyll"></span><span class="icon-bar chlorophyll"></span><span class="icon-bar chlorophyll"></span></div>
@@ -94,7 +93,7 @@
         <div class="spr__menuMobWrap">
           <div class="spr__menuMobInner">
             <ul class="spr__menuMobList">
-              <li><a href="about.html">About</a>
+              <li><a href="../about.html">About</a>
                 <hr class="mobMenuSeperator"/>
               </li>
               <li>
@@ -123,7 +122,7 @@
               <li><a href="">Blog</a>
                 <hr class="mobMenuSeperator"/>
               </li>
-              <li><a href="sovereign.html">Sovereign</a>
+              <li><a href="../sovereign.html">Sovereign</a>
                 <hr class="mobMenuSeperator"/>
               </li>
             </ul>
@@ -133,10 +132,10 @@
     </div>
     <div class="spr__propertyMain">
       <div class="spr__propertyInner">
-        <div class="spr__propertyBanner city">
+        <div class="spr__propertyBanner osian_heights">
           <div class="spr__propertyBannerText">
-            <div class="spr__propertyBannerTitle">CODENAME CITY</div>
-            <div class="spr__propertyBannerSubTitle">Scaling heights, changing skylines</div>
+            <div class="spr__propertyBannerTitle">OSIAN HEIGHTS</div>
+            <div class="spr__propertyBannerSubTitle">For unmatched heights</div>
           </div>
         </div>
         <div class="spr__propertyDetailsStripListWrap">
@@ -159,31 +158,32 @@
             <div class="spr__propertyAboutKeyDesc">
               <div class="spr__propertyAboutKeyPts" id="propertyAboutKeyPts"><span class="spr__propertyKeyPt">
                   <div class="spr__propertyKeyPtTitle">Location</div>
-                  <div class="spr__propertyKeyPtDesc">Perambur
+                  <div class="spr__propertyKeyPtDesc">Porur
                   <div class="spr__propertyKeyPtOther">Chennai</div></div>
                   </span><span class="spr__propertyKeyPt">
                   <div class="spr__propertyKeyPtTitle">Development Area</div>
-                  <div class="spr__propertyKeyPtDesc">18
+                  <div class="spr__propertyKeyPtDesc">2
                     <div class="spr__propertyKeyPtOther">Acres</div>
                   </div></span><span class="spr__propertyKeyPt">
                   <div class="spr__propertyKeyPtTitle">Towers</div>
                   <div class="spr__propertyKeyPtDesc">3</div></span><span class="spr__propertyKeyPt">
                   <div class="spr__propertyKeyPtTitle">Floor</div>
-                  <div class="spr__propertyKeyPtDesc">G + 45
+                  <div class="spr__propertyKeyPtDesc">G + 16
                     <div class="spr__propertyKeyPtOther">Floors</div>
                   </div></span><span class="spr__propertyKeyPt">
                   <div class="spr__propertyKeyPtTitle">Total Units</div>
-                  <div class="spr__propertyKeyPtDesc">612
+                  <div class="spr__propertyKeyPtDesc">140
                     <div class="spr__propertyKeyPtOther">units</div>
                   </div></span><span class="spr__propertyKeyPt">
                   <div class="spr__propertyKeyPtTitle">Apartment Variations</div>
                   <div class="spr__propertyKeyPtDesc">
-                    <div class="spr__propertyKeyPtOther" style="font-size: 20px;margin-top: -10px;padding: 0px;font-weight: 600;">2 / 3 / 4 BHK</div>
+                    <div class="spr__propertyKeyPtOther" style="font-size: 20px;margin-top: -10px;padding: 0px;font-weight: 600;">3.5 / 4 / 5 BHK</div>
                   </div></span></div>
               <div class="spr__propertyAboutDesc">
                 <div class="spr__propertyAboutDescTitle">About the Project</div>
                 <div class="spr__propertyAboutDescDetails">
-                  <p>CODENAME City will be the new age township and a benchmark for any future project and also has the privilege of having the tallest residential tower in Chennai. In recent times, the Indian homes are built using traditional norms and architectural designs. Let it be apartments or individual houses, they have gone through numerous changes in their fundamental structure. These architectures are an inspiration and can be largely seen in CODENAME City.<br /><br />Each unit is planned in such a way they reflect the Indian architecture in its flooring, painting, doors, joinery, etc. With well ventilated living area and spacious room, you can also find detailing such as ‘Thinnai’ – sitting areas outside the house, and ‘Mutram’ – inner veranda with ample light from roof will be part of the architecture.</p>
+                  <p>Osian Heights is our first projects as we ventured into the Real Estate Realm. We aimed to make a home lover’s dream into a reality. With three apartment towers in a 2 acre development with 16 floors, at Osian Heights, we’ve ensured that all comforts that a person’s lifestyle demand is available at ease. Today, Osian Heights with a 3 lakh  Sqft of construction and world class amenities stands as the tallest tower in North Chennai.<br /><br />
+                  The entire project was completed and handed over to the apartment association by 2010. Located in a prime location, it is well connected to railways and roadways. Easily visible from distance, it stands as a majestic structure supporting lives and in tandem with the environment. It was built to be at the pinnacle of excellence in design, aesthetics and engineering.</p>
                 </div>
               </div>
             </div>
@@ -191,31 +191,26 @@
             <input type="checkbox" id="propertyAmenitiesMob"/>
             <div class="spr__propertyAmenities" id="propertyAmenitiesMobStr"><span class="spr__propertyAmenityWrap">
                 <div class="spr__propertyAmenity">
-                  <div class="spr__propertyAmenityName">Football</div>
+                  <div class="spr__propertyAmenityName">Conference Hall</div>
                 </div></span><span class="spr__propertyAmenityWrap">
                 <div class="spr__propertyAmenity">
-                  <div class="spr__propertyAmenityName">Indoor games</div>
+                  <div class="spr__propertyAmenityName">Gym</div>
                 </div></span><span class="spr__propertyAmenityWrap">
                 <div class="spr__propertyAmenity">
-                  <div class="spr__propertyAmenityName">Library</div>
+                  <div class="spr__propertyAmenityName">Indoor Games</div>
                 </div></span><span class="spr__propertyAmenityWrap">
                 <div class="spr__propertyAmenity">
-                  <div class="spr__propertyAmenityName">Mini Theater</div>
+                  <div class="spr__propertyAmenityName">Jacuzzi</div>
                 </div></span><span class="spr__propertyAmenityWrap">
                 <div class="spr__propertyAmenity">
-                  <label class="spr__propertyAmenityName" for="moreAminitiesMob">2 More Amenities</label>
+                  <label class="spr__propertyAmenityName" for="moreAminitiesMob">1 More Amenities</label>
                 </div></span>
               <input class="moreAminitiesCbox" type="checkbox" id="moreAminitiesMob"/>
               <div class="spr__propertyMoreAmenityWrap">
                 <div class="spr__propertyMoreAmenityInner">
                   <span class="spr__propertyAmenityWrap">
                     <div class="spr__propertyAmenity">
-                      <div class="spr__propertyAmenityName">Spa</div>
-                    </div>
-                  </span>
-                  <span class="spr__propertyAmenityWrap">
-                    <div class="spr__propertyAmenity">
-                      <div class="spr__propertyAmenityName">Swimming Pool</div>
+                      <div class="spr__propertyAmenityName">Swimming pool</div>
                     </div>
                   </span>
                   </div>
@@ -224,47 +219,42 @@
             <div class="spr__propertyAmenities" id="propertyAmenities">
 
                 <span class="spr__propertyAmenityWrap">
-                    <div class="spr__propertyAmenity" style="background-image: url('images/projects/CITY/web/amenities/footbal.jpg')">
-                        <div class="spr__propertyAmenityName">Football</div>
+                    <div class="spr__propertyAmenity" style="background-image: url('../images/projects/heights/web/amenities/conference_hall.jpg')">
+                        <div class="spr__propertyAmenityName">Conference Hall</div>
                     </div>
                 </span>
 
                 <span class="spr__propertyAmenityWrap">
-                    <div class="spr__propertyAmenity" style="background-image: url('images/projects/CITY/web/amenities/Indoor%20games-01.jpg')">
-                        <div class="spr__propertyAmenityName">Indoor games</div>
+                    <div class="spr__propertyAmenity" style="background-image: url('../images/projects/heights/web/amenities/gym.jpg')">
+                        <div class="spr__propertyAmenityName">Gym</div>
                     </div>
                 </span>
 
                 <span class="spr__propertyAmenityWrap">
-                    <div class="spr__propertyAmenity" style="background-image: url('images/projects/CITY/web/amenities/Library-01.jpg')">
-                        <div class="spr__propertyAmenityName">Library</div>
+                    <div class="spr__propertyAmenity" style="background-image: url('../images/projects/heights/web/amenities/indoor_games.jpg')">
+                        <div class="spr__propertyAmenityName">Indoor Games</div>
                     </div>
                 </span>
 
                 <span class="spr__propertyAmenityWrap">
-                    <div class="spr__propertyAmenity" style="background-image: url('images/projects/CITY/web/amenities/Mini%20Theater-01.jpg')">
-                        <div class="spr__propertyAmenityName">Mini Theater</div>
-                    </div>
+                  <div class="spr__propertyAmenity" style="background-image: url('../images/projects/heights/web/amenities/jacuzi.jpg')">
+                    <div class="spr__propertyAmenityName">Jacuzzi</div>
+                  </div>
                 </span>
-
                 <span class="spr__propertyAmenityWrap spr__propertyAmenityMore">
                   <div class="spr__propertyAmenity">
-                    <label class="spr__propertyAmenityName" for="moreAminities">2 More Amenities</label>
+                    <label class="spr__propertyAmenityName" for="moreAminities">1 More Amenities</label>
                   </div>
                 </span>
               <input class="moreAminitiesCbox" type="checkbox" id="moreAminities"/>
               <div class="spr__propertyMoreAmenityWrap">
                 <div class="spr__propertyMoreAmenityInner">
 
-
                     <span class="spr__propertyAmenityWrap">
-                    <div class="spr__propertyAmenity" style="background-image: url('images/projects/CITY/web/amenities/Spa-01.jpg')">
-                      <div class="spr__propertyAmenityName">Spa</div>
-                    </div></span>
-                    <span class="spr__propertyAmenityWrap">
-                    <div class="spr__propertyAmenity" style="background-image: url('images/projects/CITY/web/amenities/Swimming%20pool-01.jpg')">
-                      <div class="spr__propertyAmenityName">Swimming Pool</div>
-                    </div></span>
+                      <div class="spr__propertyAmenity" style="background-image: url('../images/projects/heights/web/amenities/swmming_pool.jpg')">
+                        <div class="spr__propertyAmenityName">Swimming pool</div>
+                      </div>
+                    </span>
                 </div>
               </div>
             </div>
@@ -321,28 +311,32 @@
             <div class="spr__propertyGallery" id="propertyGallery">
               <div class="spr__propertyGalleryInner">
                 <div class="spr__propertyGalleryMob">
-                  <div class="spr__propertyGalleryImg"><img class="img-responsive" src="images/projects/CITY/web/GALLERY/city%20gallery.jpg"/></div>
-                  <div class="spr__propertyGalleryImg"><img class="img-responsive" src="images/projects/CITY/web/GALLERY/city%20night%20view.jpg"/></div>
-                  <!-- <div class="spr__propertyGalleryMobMore">
+                  <div class="spr__propertyGalleryImg"><img class="img-responsive" src="../images/projects/heights/web/gallery/banquet.jpg"/></div>
+                  <div class="spr__propertyGalleryImg"><img class="img-responsive" src="../images/projects/heights/web/gallery/mini_theatre.jpg"/></div>
+                  <div class="spr__propertyGalleryMobMore">
                     <label class="spr__propertyGalleryMobTrig" for="propertyGalleryMobTrig" onclick="checkMobGallery()">View all</label>
                     <input type="checkbox" id="propertyGalleryMobTrig"/>
                     <div class="spr__propertyGalleryMobWrap">
                       <div class="spr__propertyGalleryMobInner">
-                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="images/projects/chlorophyll/web/gallery/gal_3.jpg"/></div>
-                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="images/projects/chlorophyll/web/gallery/gal_4.jpg"/></div>
-                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="images/projects/chlorophyll/web/gallery/gal_5.jpg"/></div>
-                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="images/projects/chlorophyll/web/gallery/bedroom.jpg"/></div>
+                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="../images/projects/heights/web/gallery/gal_4.jpg"/></div>
+                        <div class="spr__propertyGalleryImg"><img class="img-responsive" src="../images/projects/heights/web/gallery/indoor_games.jpg"/></div>
                       </div>
                     </div>
-                  </div> -->
+                  </div>
                 </div>
                 <div class="spr__propertyGalleryCarousel">
                   <ul class="slickslide">
-                    <li><img src="images/projects/CITY/web/GALLERY/city%20gallery.jpg" title="img" alt="img"/>
-                      <div class="imageCaption">City Gallery</div>
+                    <li><img src="../images/projects/heights/web/gallery/banquet.jpg" title="Banquet" alt="img"/>
+                      <div class="imageCaption">Banquet</div>
                     </li>
-                    <li><img src="images/projects/CITY/web/GALLERY/city%20night%20view.jpg" title="img2" alt="img2"/>
-                      <div class="imageCaption">Night View</div>
+                    <li><img src="../images/projects/heights/web/gallery/gal_4.jpg" title="Banquet" alt="img2"/>
+                      <div class="imageCaption">Banquet 2</div>
+                    </li>
+                    <li><img src="../images/projects/heights/web/gallery/indoor_games.jpg" title="Indoor Games" alt="img"/>
+                      <div class="imageCaption">Indoor Games</div>
+                    </li>
+                    <li><img src="../images/projects/heights/web/gallery/mini_theatre.jpg" title="Mini Theatre" alt="img"/>
+                      <div class="imageCaption">Mini Theatre</div>
                     </li>
                   </ul>
                   <ul class="slick-thumbs">
@@ -350,8 +344,10 @@
                     <li><img src="https://unsplash.it/160/160?image=112"/></li>
                     <li><img src="https://unsplash.it/160/160?image=113"/></li>
 -->
-                    <li><img src="images/projects/CITY/web/GALLERY/city%20gallery.jpg"/></li>
-                    <li><img src="images/projects/CITY/web/GALLERY/city%20night%20view.jpg"/></li>
+                    <li><img src="../images/projects/heights/web/gallery/banquet.jpg"/></li>
+                    <li><img src="../images/projects/heights/web/gallery/gal_4.jpg"/></li>
+                    <li><img src="../images/projects/heights/web/gallery/indoor_games.jpg"/></li>
+                    <li><img src="../images/projects/heights/web/gallery/mini_theatre.jpg"/></li>
                   </ul>
                 </div>
               </div>
@@ -383,7 +379,6 @@
                       <div class="spr__propertyEnquiryFormMsg">or Call Us on +91 81486 81486</div>
                     </div>
                   </form>
-                </div>
               </div>
             </div>
           </div>
@@ -394,7 +389,7 @@
     <div class="spr__footerMain">
       <div class="spr__footerInner">
         <div class="spr__footerIconWrap">
-          <div class="spr__footerIcon"><img class="img-responsive" src="images/logoDark.svg"/></div>
+          <div class="spr__footerIcon"><img class="img-responsive" src="../images/logoDark.svg"/></div>
         </div>
         <div class="spr__footerLinksWrap">
 
@@ -455,8 +450,8 @@
             <input class="spr__footerLinksSetCheckbox" type="checkbox" id="set1"/>
             <div class="spr__footerLinksSetListWrap">
               <ul class="spr__footerLinksSetList">
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../about.html">About</a></li>
               </ul>
             </div>
           </div>
